@@ -1,6 +1,6 @@
 import React from "react";
 import { stack as Menu } from 'react-burger-menu'
-import "./style.css";
+import "../components/Nav/style.css";
 
 class Nav extends React.Component {
   showSettings (event) {
