@@ -15,7 +15,7 @@ body {
 
 /* NAV BAR */
 
-/* Position and sizing of burger button */
+// /* Position and sizing of burger button */
 .bm-burger-button {
     position: fixed;
     width: 36px;
@@ -81,3 +81,23 @@ body {
   .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
   }
+
+// Heatmap
+
+.container{
+  width: 1100px;
+  text-align: center
+}
+
+.yAxis {
+  path : line;
+    stroke: white
+}
+
+.tooltip {
+  background-color: lightgrey;
+  position: absolute;
+  opacity: 0;
+  width: 70px;
+  padding: 5px
+}
