@@ -81,7 +81,7 @@ export  class DataViewContainer extends React.Component {
                 <Row className = "button">
                     <Col span="9" offset = "6">
                         <RadioGroup value={this.state.chartType} onChange={this.onChartTypeChange}>
-                            <Radio value="hexbin">Hexbin</Radio>
+                            <Radio value="hexbin">Hot Zones</Radio>
                             <Radio value ="scatter">Scatter</Radio>
                         </RadioGroup>
                     </Col>
