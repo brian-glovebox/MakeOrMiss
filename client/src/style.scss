@@ -6,6 +6,7 @@ html,body{
   padding:0;
   font-family: Arial, Helvetica, sans-serif; 
   font-size: 3vh;
+  background-color: #212121
 }
 
 body {
@@ -26,7 +27,7 @@ body {
   
   /* Color/shape of burger icon bars */
   .bm-burger-bars {
-    background: #151C1D;
+    background: whitesmoke;
   }
   
   /* Color/shape of burger icon bars on hover*/
@@ -279,9 +280,9 @@ path.shot {
 // profile.js 
 .profile {
   width: 200px;
-  background-color: black;
+  background-color: #303030;
   font-size: 0.8em;
-  color: white;
+  color: whitesmoke;
 }
 
 .profile-entry {
@@ -353,16 +354,3 @@ path.shot {
   font-size: 20px;
 }
 
-// TopBar.js
-.App-logo {
-  height: 35px;
-
-}
-
-.App-header {
-  padding : 10px 0 10px 40px;
-  display : flex;
-  background-color: #1D428A;
-  box-shadow : -1px 0 5px #888;
-  margin-bottom: 70px;
-}
