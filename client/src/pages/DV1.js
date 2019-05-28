@@ -1,14 +1,21 @@
-import React from "react";
+import React, { Component } from 'react';
+import { Main } from '../components/Main';
+import nba from 'nba';
 
-const DV1 = () => (
-  <div id="dv1">
-    <h1>Test Page: DV1</h1>
-    <br/>
-    <h2>This is the test page</h2>
-    <br/>
-    <p>Data Visualization will go here</p>
-  </div>
+window.nba = nba;
 
-);
+class DV1 extends Component {
+
+
+  render() {
+    console.log('render', this.state);
+    return (
+        <div className="App">
+
+          <Main />
+        </div>
+    );
+  }
+}
 
 export default DV1;
