@@ -25,6 +25,7 @@
     "d3-hexbin": "^0.2.2",
     "express": "^4.16.3",
     "if-env": "^1.0.4",
+    "moment": "^2.24.0",
     "mongoose": "^5.3.16",
     "react-burger-menu": "^2.6.10"
   }
