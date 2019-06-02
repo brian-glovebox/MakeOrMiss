@@ -4,6 +4,7 @@ import nba from "nba";
 import {DataViewContainer} from "./DataViewContainer";
 import { SearchBar} from "./SearchBar";
 import { DEFAULT_PLAYER_INFO } from "../constants";
+
 window.nba = nba;
 
 export class Main extends React.Component {
@@ -33,6 +34,7 @@ export class Main extends React.Component {
             });
 
     }
+
     render(){
         return(
             <div className= 'main'>
