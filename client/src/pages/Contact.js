@@ -6,7 +6,7 @@ class Contact extends React.Component {
 
 BC(){
   // set the dimensions and margins of the graph
-var margin = {top: 40, right: 150, bottom: 60, left: 30},
+var margin = {top: 80, right: 300, bottom: 120, left: 60},
     width = 1000 - margin.left - margin.right,
     height = 840 - margin.top - margin.bottom;
 
@@ -85,22 +85,22 @@ d3.csv(Scatter).then (function(data) {
   var showTooltip = function(d) {
     tooltip
       .transition()
-      .duration(200)
+      .duration(2000)
     tooltip
       .style("opacity", 1)
       .html("Description: " + d.description)
-      .style("left", (d3.mouse(this)[0]+30) + "px")
-      .style("top", (d3.mouse(this)[1]+30) + "px")
+      .style("left", (d3.mouse(this)[0]+50) + "px")
+      .style("top", (d3.mouse(this)[1]+50) + "px")
   }
   var moveTooltip = function(d) {
     tooltip
-      .style("left", (d3.mouse(this)[0]+30) + "px")
-      .style("top", (d3.mouse(this)[1]+30) + "px")
+      .style("left", (d3.mouse(this)[0]+50) + "px")
+      .style("top", (d3.mouse(this)[1]+50) + "px")
   }
   var hideTooltip = function(d) {
     tooltip
       .transition()
-      .duration(200)
+      .duration(4000)
       .style("opacity", 0)
   }
 
@@ -143,6 +143,7 @@ d3.csv(Scatter).then (function(data) {
     .on("mousemove", moveTooltip )
     .on("mouseleave", hideTooltip )
 
+ 
 
 
     // ---------------------------//
@@ -190,11 +191,11 @@ d3.csv(Scatter).then (function(data) {
         .attr('alignment-baseline', 'middle')
 
     // Legend title
-    svg.append("text")
-      .attr('x', xCircle)
-      .attr("y", height - 100 +30)
-      .text("makeormissulation (M)")
-      .attr("text-anchor", "middle")
+    // svg.append("text")
+    //   .attr('x', xCircle)
+    //   .attr("y", height - 100 +30)
+    //   .text("makeormissulation (M)")
+    //   .attr("text-anchor", "middle")
 
     // Add one dot in the legend for each name.
     var size = 20
