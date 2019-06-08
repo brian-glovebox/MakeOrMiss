@@ -1,3 +1,5 @@
+@import '~antd/dist/antd.css';
+
 /* BODY */
 
 html,body{
@@ -5,9 +7,15 @@ html,body{
   margin:0;
   padding:0;
   font-family: Arial, Helvetica, sans-serif; 
+<<<<<<< HEAD
   font-size: 2vh; 
   background-color: #323639;
   color:black;
+=======
+
+  background-color: #323639;
+
+>>>>>>> 449b2242b5502bc876e938717345710d76aa54b5
 }
 
 body {
@@ -168,6 +176,7 @@ body {
 
 .dvContainer {
   position: absolute;
+  min-width: 100vw;
 }
   
 
@@ -259,8 +268,13 @@ body {
 //     fill: none;
 // }
 
+<<<<<<< HEAD
 /********END SHOTCHART COURT STYLES****** */
 /********SHOT STYLES****** */
+=======
+// /********END SHOTCHART COURT STYLES****** */
+// /********SHOT STYLES****** */
+>>>>>>> 449b2242b5502bc876e938717345710d76aa54b5
 // svg circle {
 //     stroke: black;
 //     fill: none;
@@ -278,6 +292,7 @@ body {
 //     stroke-width: 0.05;
 // }
 
+<<<<<<< HEAD
 // path {
 //     stroke: white;
 //     stroke-width: 0.05;
@@ -346,6 +361,76 @@ body {
 //     top: 50%;
 //     left: 100%;
 // }
+=======
+path {
+    stroke: white;
+    stroke-width: 0.05;
+}
+
+path.shot {
+    stroke: white;
+    fill: none;
+    stroke-width: 0.05;
+}
+
+/********END SHOT STYLES****** */
+/********SHOT TOOLTIPS****** */
+.d3-tip {
+    line-height: 1;
+    font-weight: lighter;
+    padding: 12px;
+    background: #006886;
+    color: #fff;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: #006886;
+    position: absolute;
+    pointer-events: none;
+}
+
+/* Northward tooltips */
+.d3-tip.n:after {
+    content: "▼";
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+    text-align: center;
+}
+
+/* Eastward tooltips */
+.d3-tip.e:after {
+    content: "◀";
+    margin: -4px 0 0 0;
+    top: 50%;
+    left: -8px;
+}
+
+/* Southward tooltips */
+.d3-tip.s:after {
+    content: "▲";
+    margin: 0 0 1px 0;
+    top: -8px;
+    left: 0;
+    text-align: center;
+}
+
+/* Westward tooltips */
+.d3-tip.w:after {
+    content: "▶";
+    margin: -4px 0 0 -1px;
+    top: 50%;
+    left: 100%;
+}
+>>>>>>> 449b2242b5502bc876e938717345710d76aa54b5
 
 // Main.js in components folder 
 
@@ -442,6 +527,7 @@ body {
   font-size: 20px;
 }
 
+<<<<<<< HEAD
 
 //LineG
 
@@ -554,4 +640,20 @@ text {
   max-width: 800px;
   margin: 0 auto;
   padding: 40px;
+=======
+// Clutch Bubble  
+.node:hover{
+  stroke-width: 7px !important;
+  opacity: 1 !important;
+}
+
+// Bubble scatter
+.bubbles {
+  stroke-width: 1px;
+  stroke: black;
+  // opacity: .9
+}
+.bubbles:hover {
+  stroke: black;
+>>>>>>> 449b2242b5502bc876e938717345710d76aa54b5
 }
