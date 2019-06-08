@@ -10,7 +10,7 @@ class Main extends Component {
 
   render() {
     return (
-      <div id="dv2">
+      <div className="windowBox" id="contact">
     <h1>Main Page</h1>
     <br/>
     <h2>This is the main page</h2>

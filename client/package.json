@@ -6,11 +6,11 @@
   "dependencies": {
     "antd": "^3.19.1",
     "axios": "^0.18.0",
-    "moment": "^2.24.0",
     "d3": "^5.9.2",
     "d3-hexbin": "^0.2.2",
     "d3-shotchart": "0.0.2",
     "d3-tip": "^0.9.1",
+    "moment": "^2.24.0",
     "nba": "^4.8.0",
     "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
@@ -20,7 +20,8 @@
     "react-flip-move": "^3.0.3",
     "react-heatmap-grid": "^0.8.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "^2.1.1"
+    "react-scripts": "^2.1.1",
+    "react-scroll": "^1.7.11"
   },
   "scripts": {
     "start": "react-scripts start",

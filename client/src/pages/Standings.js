@@ -59,6 +59,7 @@ const westernC = [
 
 
 class ListItem extends Component {
+
   render() {
     const listClass = `list-item card ${this.props.view}`;
     const style = { zIndex: 100 - this.props.index };
@@ -165,7 +166,7 @@ class Standings extends Component {
     for (let i = 0; i <this.state.easternC.length; i++) {
 
       invert = (this.state.easternC[i].recordW - this.state.easternC[i].threeW + this.state.easternC[i].threeL )
-      console.log(invert)
+      console.log(this.props)
     }
   
 
@@ -201,7 +202,7 @@ class Standings extends Component {
           key={article.id}
           view={this.state.view}
           index={i}
-          clickHandler={throttle(() => this.moveArticle('easternC', 'removedArticles', article.id), 800)}
+          clickHandler={throttle(() => this.moveArticle('westernC', 'removedArticles', article.id), 800)}
           {...article}
         />
       );
@@ -209,8 +210,8 @@ class Standings extends Component {
   }
 
   render() {
-    return (
-      <div id="shuffle" className={this.state.view}>
+    return ( <div className="windowBox" id="standings">
+      <div className={this.state.view}>
         <header>
           <div className="abs-left">
             <Toggle
@@ -264,8 +265,8 @@ class Standings extends Component {
         <br/>
         <br/>
         <br/>
-        <div className="standingContainer">
-        <div className= "standingsBox">
+        <div className="dvContainer">
+        <div className= "dvBox">
           <FlipMove
             staggerDurationBy="30"
             duration={500}
@@ -276,7 +277,7 @@ class Standings extends Component {
             { this.renderWesternC() }
           </FlipMove>
         </div>
-        <div className= "standingsBox">
+        <div className= "dvBox">
           <FlipMove
             staggerDurationBy="30"
             duration={500}
@@ -290,6 +291,7 @@ class Standings extends Component {
         </div>
         
       </div>
+  </div>
     );
   }
 };
