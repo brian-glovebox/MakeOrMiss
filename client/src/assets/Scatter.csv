@@ -240,6 +240,444 @@
 "Dennis Smith makes 2-pt layup from 1 ft (DAL 104, OKC 103)","Dallas Mavericks",1.3,8,24.5,"DALOKC"
 "Paul George misses 2-pt jump shot from 19 ft (OKC 103, DAL 104)","OKC Thunder",19.3,1,4.3,"DALOKC"
 "Russell Westbrook misses 3-pt jump shot from 23 ft (OKC 103, DAL 105)","OKC Thunder",23.3,3,0.6,"DALOKC"
+"Jordan Clarkson misses 3-pt jump shot from 26 ft (CLE 106, ATL 109)","Cleveland Cavs",26.1,3,8.6,"CLEATL"
+"Kent Bazemore makes 2-pt dunk from 2 ft (ATL 112, MIN 112)","Atlanta Hawks",2.1,8,17.6,"CLEATL"
+"Derrick Rose misses 2-pt jump shot from 11 ft (block by Justin Anderson) (MIN 112, ATL 112)","Minnesota TWolves",11.4,1,0.6,"ATLMIN"
+"Bogdan Bogdanovic misses 2-pt layup from 8 ft (block by Josh Hart) (SAC 114, LAL 115)","Sacramento Kings",8.3,1,13.6,"SACLAL"
+"Justin Jackson misses 2-pt layup from 4 ft (SAC 114, LAL 115)","Sacramento Kings",4.3,1,10.6,"SACLAL"
+"Bogdan Bogdanovic makes 3-pt jump shot from 26 ft (assist by Nemanja Bjelica) (SAC 117, LAL 116)","Sacramento Kings",26.9,10,0.6,"SACLAL"
+"Stephen Curry misses 3-pt jump shot from 30 ft (GSW 99, POR 102)","Golden State Warriors",30.9,3,24.3,"GSWPOR"
+"Kevin Durant makes 3-pt jump shot from 28 ft (assist by Stephen Curry) (GSW 102, POR 102)","Golden State Warriors",28.4,10,20.1,"GSWPOR"
+"Damian Lillard misses 3-pt jump shot from 28 ft (POR 102, GSW 102)","Portland Blazers",28.4,3,1.1,"GSWPOR"
+"Devin Booker misses 3-pt jump shot from 25 ft (PHO 118, ORL 118)","Phoenix Suns",25.4,3,3.1,"PHOORL"
+"Danny Green makes 3-pt jump shot from 25 ft (assist by Serge Ibaka) (TOR 106, MIA 104)","Toronto Raptors",25.2,10,22.3,"MIATOR"
+"Dwyane Wade misses 3-pt jump shot from 27 ft (MIA 104, TOR 106)","Miami Heat",27.4,3,4.3,"MIATOR"
+"Justise Winslow misses 3-pt jump shot from 26 ft (MIA 104, TOR 106)","Miami Heat",26.4,3,2.3,"MIATOR"
+"Dwyane Wade misses 2-pt layup from 1 ft (MIA 104, TOR 106)","Miami Heat",1.4,1,0.3,"MIATOR"
+"Anthony Davis misses 3-pt jump shot from 25 ft (NOP 119, DAL 121)","New Orleans Pelicans",25.4,3,19.9,"NOPDAL"
+"Anthony Davis misses 3-pt jump shot from 26 ft (NOP 119, DAL 122)","New Orleans Pelicans",26.4,3,3.9,"NOPDAL"
+"Marvin Williams makes 3-pt jump shot from 22 ft (assist by Kemba Walker) (CHO 113, BRK 110)","Charlotte Hornets",22.4,10,19.3,"CHOBRK"
+"Spencer Dinwiddie misses 3-pt jump shot from 27 ft (BRK 110, CHO 113)","Brooklyn Nets",27.4,3,11.6,"CHOBRK"
+"Kemba Walker misses 3-pt jump shot from 84 ft (CHO 114, BRK 114)","Charlotte Hornets",50.0,3,0.6,"CHOBRK"
+"Kyrie Irving makes 2-pt jump shot from 13 ft (BOS 108, PHI 108)","Boston Celtics",13.0,8,20.4,"BOSPHI"
+"J.J. Redick misses 2-pt jump shot from 18 ft (PHI 108, BOS 108)","Philadelphia Sixers",18.4,1,0.4,"BOSPHI"
+"Luka Doncic makes 3-pt jump shot from 22 ft (assist by Jalen Brunson) (DAL 107, POR 107)","Dallas Mavericks",22.5,10,1.9,"DALPOR"
+"Russell Westbrook makes 2-pt layup from 1 ft (OKC 112, MIN 111)","OKC Thunder",1.5,8,23.9,"MINOKC"
+"Andrew Wiggins makes 2-pt layup from 1 ft (MIN 113, OKC 112)","Minnesota TWolves",1.9,8,14.3,"MINOKC"
+"Alex Abrines misses 3-pt jump shot from 23 ft (OKC 112, MIN 113)","OKC Thunder",23.5,3,10.0,"MINOKC"
+"Paul George misses 3-pt jump shot from 27 ft (OKC 112, MIN 114)","OKC Thunder",27.5,3,0.3,"MINOKC"
+"Tobias Harris misses 2-pt layup from 2 ft (block by Kevin Durant) (LAC 125, GSW 127)","LA Clippers",2.5,1,20.6,"LACGSW"
+"Avery Bradley makes 2-pt dunk from 1 ft (LAC 127, GSW 127)","LA Clippers",1.5,8,19.6,"LACGSW"
+"Stephen Curry makes 2-pt layup from 3 ft (GSW 129, LAC 127)","Golden State Warriors",3.7,8,3.6,"LACGSW"
+"Tomas Satoransky misses 3-pt jump shot from 26 ft (WAS 107, PHO 108)","Washington Wizards",26.7,3,8.6,"WASPHO"
+"Devin Booker misses 3-pt jump shot from 30 ft (PHO 109, WAS 109)","Phoenix Suns",30.7,3,4.6,"WASPHO"
+"Mike Conley misses 2-pt jump shot from 14 ft (MEM 97, SAC 98)","Memphis Grizzlies",14.4,1,15.6,"MEMSAC"
+"Marc Gasol misses 3-pt jump shot from 25 ft (MEM 97, SAC 100)","Memphis Grizzlies",25.4,3,7.6,"MEMSAC"
+"Eric Gordon misses 3-pt jump shot from 25 ft (HOU 99, MIA 101)","Houston Rockets",25.9,3,0.6,"HOUMIA"
+"Andre Iguodala misses 3-pt jump shot from 25 ft (GSW 103, UTA 106)","Golden State Warriors",25.9,3,7.6,"GSWUTA"
+"Bojan Bogdanovic misses 3-pt jump shot from 28 ft (IND 96, TOR 99)","Indiana Pacers",28.9,3,1.6,"INDTOR"
+"Derrick Rose misses 2-pt jump shot from 5 ft (MIN 115, DET 116)","Minnesota TWolves",5.5,1,1.6,"MINDET"
+"Robert Covington makes 3-pt jump shot from 23 ft (assist by Dario Saric) (MIN 118, DET 116)","Minnesota TWolves",23.5,10,7.6,"MINDET"
+"Reggie Jackson misses 2-pt layup from 6 ft (DET 116, MIN 118)","Detroit Pistons",6.5,1,1.6,"MINDET"
+"Andre Drummond makes 2-pt layup at rim (DET 118, MIN 118)","Detroit Pistons",1.5,8,0.6,"MINDET"
+"Rodney Hood misses 2-pt jump shot from 20 ft (CLE 90, IND 91)","Cleveland Cavs",20.5,3,2.6,"INDCLE"
+"Larry Nance makes 2-pt layup at rim (CLE 92, IND 91)","Cleveland Cavs",4.5,8,4.6,"INDCLE"
+"Blake Griffin misses 3-pt jump shot from 26 ft (DET 104, MIL 107)","Detroit Pistons",26.3,3,11.3,"DETMIL"
+"Blake Griffin misses 3-pt jump shot from 27 ft (DET 104, MIL 107)","Detroit Pistons",27.5,3,1.4,"DETMIL"
+"Bryn Forbes misses 3-pt jump shot from 24 ft (SAS 93, CHI 96)","San Antonio Spurs",24.3,3,4.6,"SASCHI"
+"Buddy Hield misses 3-pt jump shot from 25 ft (SAC 125, GSW 128)","Sacramento Kings",25.7,3,5.8,"GSWSAC"
+"Kemba Walker misses 3-pt jump shot from 26 ft (CHO 113, NYK 113)","Charlotte Hornets",26.3,3,8.8,"CHONYK"
+"Emmanuel Mudiay misses 3-pt jump shot from 31 ft (NYK 113, CHO 113)","New York Knicks",31.3,3,0.6,"CHONYK"
+"Zach LaVine misses 2-pt jump shot from 9 ft (CHI 91, ORL 93)","Chicago Bulls",9.6,1,17.6,"ORLCHI"
+"Bradley Beal makes 2-pt layup from 1 ft (WAS 113, BOS 113)","Washington Wizards",1.6,8,11.4,"WASBOS"
+"Kyrie Irving misses 2-pt layup from 6 ft (BOS 113, WAS 113)","Boston Celtics",6.8,1,0.9,"WASBOS"
+"Russell Westbrook misses 3-pt jump shot from 25 ft (OKC 114, NOP 116)","OKC Thunder",25.8,3,13.9,"OKCNOP"
+"Alex Abrines misses 3-pt jump shot from 25 ft (OKC 114, NOP 116)","OKC Thunder",25.4,3,9.0,"OKCNOP"
+"Rodney Hood makes 2-pt jump shot from 10 ft (CLE 107, NYK 106)","Cleveland Cavs",10.4,8,23.4,"CLENYK"
+"Emmanuel Mudiay misses 2-pt jump shot from 14 ft (NYK 106, CLE 107)","New York Knicks",14.7,1,17.2,"CLENYK"
+"Jeremy Lamb makes 2-pt jump shot from 22 ft (assist by Kemba Walker) (CHO 108, DET 106)","Charlotte Hornets",22.3,8,0.7,"CHODET"
+"De'Anthony Melton makes 2-pt jump shot from 9 ft (PHO 111, LAC 111)","Phoenix Suns",9.5,8,5.4,"PHOLAC"
+"Danilo Gallinari misses 2-pt jump shot from 23 ft (LAC 111, PHO 111)","Los Angeles Clippers",23.4,1,0.5,"PHOLAC"
+"Dwyane Wade misses 3-pt jump shot from 26 ft (MIA 105, LAL 106)","Miami Heat",26.4,3,22.4,"MIALAL"
+"Dwyane Wade misses 3-pt jump shot from 26 ft (MIA 105, LAL 108)","Miami Heat",26.1,3,7.4,"MIALAL"
+"Justise Winslow misses 3-pt jump shot from 27 ft (MIA 105, LAL 108)","Miami Heat",27.3,3,3.4,"MIALAL"
+"Kawhi Leonard misses 3-pt jump shot from 26 ft (TOR 99, MIL 102)","Toronto Raptors",26.1,3,9.4,"TORMIL"
+"Eric Gordon misses 3-pt jump shot from 25 ft (HOU 104, DAL 107)","Houston Rockets",25.1,3,18.4,"HOUDAL"
+"Eric Gordon misses 3-pt jump shot from 23 ft (HOU 104, DAL 107)","Houston Rockets",23.1,3,0.5,"HOUDAL"
+"Anthony Davis misses 3-pt jump shot from 25 ft (NOP 103, MEM 106)","New Orleans Pelicans",25.1,3,14.6,"MEMNOP"
+"E'Twaun Moore misses 3-pt jump shot from 24 ft (NOP 103, MEM 106)","New Orleans Pelicans",24.5,3,9.4,"MEMNOP"
+"Justin Holiday makes 3-pt jump shot from 26 ft (assist by Lauri Markkanen) (CHI 112, OKC 110)","Chicago Bulls",26.5,10,23.5,"OKCCHI"
+"Russell Westbrook makes 2-pt layup from 1 ft (assist by Paul George) (OKC 112, CHI 112)","OKC Thunder",1.5,8,19.3,"OKCCHI"
+"Lauri Markkanen makes 2-pt layup from 2 ft (CHI 114, OKC 112)","Chicago Bulls",2.3,8,4.2,"OKCCHI"
+"Paul George misses 3-pt jump shot from 24 ft (OKC 112, CHI 114)","OKC Thunder",24.6,3,3.1,"OKCCHI"
+"Kawhi Leonard misses 2-pt jump shot from 12 ft (TOR 98, BRK 98)","Toronto Raptors",12.3,1,7.5,"TORBRK"
+"Spencer Dinwiddie misses 2-pt layup from 6 ft (block by Kawhi Leonard) (BRK 98, TOR 98)","Brooklyn Nets",6.1,1,1.3,"TORBRK"
+"Terrence Ross makes 3-pt jump shot from 25 ft (assist by Aaron Gordon) (ORL 112, DEN 112)","Orlando Magic",25.4,10,7.7,"ORLDEN"
+"Jamal Murray misses 2-pt jump shot from 10 ft (DEN 112, ORL 112)","Denver Nuggets",10.4,1,1.3,"ORLDEN"
+"Paul George makes 3-pt jump shot from 25 ft (assist by Russell Westbrook) (OKC 114, BRK 112)","OKC Thunder",25.4,10,3.6,"OKCBRK"
+"Danny Green misses 2-pt jump shot from 22 ft (TOR 101, DEN 102)","Toronto Raptors",22.1,1,21.8,"TORDEN"
+"Danny Green misses 3-pt jump shot from 26 ft (TOR 101, DEN 102)","Toronto Raptors",26.1,3,16.3,"TORDEN"
+"Kawhi Leonard makes 2-pt jump shot from 10 ft (TOR 103, DEN 103)","Toronto Raptors",10.4,8,7.2,"TORDEN"
+"Kyle Lowry misses 3-pt jump shot from 26 ft (TOR 103, DEN 106)","Toronto Raptors",26.3,3,0.2,"TORDEN"
+"E'Twaun Moore misses 3-pt jump shot from 25 ft (NOP 126, LAC 129)","New Orleans Pelicans",25.9,3,2.4,"NOPLAC"
+"D'Angelo Russell misses 3-pt jump shot from 27 ft (BRK 95, CLE 97)","Brooklyn Nets",27.6,3,20.4,"CLEBRK"
+"Rodions Kurucs makes 2-pt layup from 2 ft (BRK 97, CLE 97)","Brooklyn Nets",2.6,8,18.8,"CLEBRK"
+"Alec Burks makes 2-pt dunk from 1 ft (CLE 99, BRK 97)","Cleveland Cavs",6.6,8,3.4,"CLEBRK"
+"Spencer Dinwiddie misses 3-pt jump shot from 24 ft (BRK 97, CLE 99)","Brooklyn Nets",24.7,3,1.4,"CLEBRK"
+"Donovan Mitchell misses 2-pt layup from 1 ft (UTA 100, MIA 100)","Utah Jazz",1.7,1,20.4,"UTAMIA"
+"Donovan Mitchell misses 3-pt jump shot from 24 ft (UTA 100, MIA 102)","Utah Jazz",24.5,3,1.8,"UTAMIA"
+"Tobias Harris misses 3-pt jump shot from 26 ft (LAC 110, DAL 112)","LA Clippers",26.5,3,21.8,"LACDAL"
+"Tobias Harris misses 2-pt jump shot from 5 ft (block by Dennis Smith) (LAC 110, DAL 112)","LA Clippers",5.5,1,12.3,"LACDAL"
+"Willie Cauley-Stein makes 2-pt dunk from 1 ft (SAC 111, IND 110)","Sacramento Kings",1.3,8,16.8,"SACIND"
+"De'Aaron Fox misses 2-pt layup from 6 ft (SAC 109, IND 110)","Sacramento Kings",6.4,1,16.1,"SACIND"
+"Bojan Bogdanovic misses 2-pt jump shot from 17 ft (IND 110, SAC 111)","Indiana Pacers",17.1,1,4.5,"SACIND"
+"Emmanuel Mudiay makes 3-pt jump shot from 26 ft (NYK 124, MIL 124)","New York Knicks",26.3,10,24.7,"MILNYK"
+"Giannis Antetokounmpo misses 2-pt jump shot from 14 ft (MIL 124, NYK 124)","Milwuakee Bucks",14.4,1,0.7,"MILNYK"
+"Gary Harris makes 3-pt jump shot from 24 ft (assist by Nikola Jokic) (DEN 113, POR 110)","Denver Nuggets",24.4,10,16.5,"PORDEN"
+"CJ McCollum misses 2-pt jump shot from 21 ft (POR 112, DEN 113)","Portland Blazers",21.4,1,1.3,"PORDEN"
+"Jaren Jackson makes 3-pt jump shot from 29 ft (assist by Marc Gasol) (MEM 111, BRK 111)","Memphis Grizzlies",29.3,10,15.7,"BRKMEM"
+"Spencer Dinwiddie misses 2-pt layup from 7 ft (block by Mike Conley) (BRK 111, MEM 111)","Brooklyn Nets",1.5,1,1.4,"BRKMEM"
+"Kevin Durant makes 3-pt jump shot from 24 ft (GSW 119, TOR 119)","Golden State Warriors",24.5,10,9.2,"TORGSW"
+"Brook Lopez misses 2-pt layup from 2 ft (MIL 113, CHI 113)","Milwuakee Bucks",2.5,1,11.2,"MILCHI"
+"Brook Lopez misses 2-pt layup from 3 ft (block by Robin Lopez) (MIL 113, CHI 113)","Milwuakee Bucks",3.5,1,9.4,"MILCHI"
+"Brook Lopez misses 2-pt layup from 1 ft (MIL 113, CHI 113)","Milwuakee Bucks",1.2,1,8.4,"MILCHI"
+"Khris Middleton makes 3-pt jump shot from 25 ft (assist by Malcolm Brogdon) (MIL 116, CHI 113)","Milwuakee Bucks",25.4,10,5.8,"MILCHI"
+"Justin Holiday misses 3-pt jump shot from 26 ft (CHI 113, MIL 116)","Chicago Bulls",26.4,3,1.9,"MILCHI"
+"Devin Booker misses 3-pt jump shot from 26 ft (PHO 104, IND 107)","Phoenix Suns",26.2,3,18.9,"PHOIND"
+"Josh Richardson misses 3-pt jump shot from 26 ft (MIA 113, ATL 115)","Miami Heat",26.1,3,1.4,"MIAATL"
+"Clint Capela makes 2-pt dunk from 1 ft (assist by James Harden) (HOU 125, WAS 125)","Houston Rockets",1.1,8,9.1,"HOUWAS"
+"John Wall misses 2-pt jump shot from 6 ft (block by P.J. Tucker) (WAS 125, HOU 125)","Washington Wizards",6.4,1,3.6,"HOUWAS"
+"Eric Gordon misses 3-pt jump shot from 24 ft (block by John Wall) (HOU 125, WAS 125)","Houston Rockets",24.3,3,0.6,"HOUWAS"
+"Eric Bledsoe misses 3-pt jump shot from 37 ft (MIL 107, CHO 110)","Milwuakee Bucks",37.3,3,0.9,"MILCHO"
+"Zach LaVine misses 3-pt jump shot from 25 ft (CHI 107, SAS 108)","Chicago Bulls",25.3,3,4.9,"CHISAS"
+"Ryan Arcidiacono misses 2-pt jump shot from 18 ft (CHI 107, SAS 108)","Chicago Bulls",18.3,1,0.9,"CHISAS"
+"Kentavious Caldwell-Pope misses 3-pt jump shot from 26 ft (LAL 104, ORL 106)","LA Lakers",26.4,3,18.5,"ORLLAL"
+"J.J. Redick misses 2-pt jump shot from 23 ft (PHI 124, BRK 125)","Philadelphia Sixers",23.1,1,19.3,"PHIBRK"
+"Jimmy Butler makes 3-pt jump shot from 26 ft (PHI 127, BRK 125)","Philadelphia Sixers",26.4,10,2.5,"PHIBRK"
+"Kent Bazemore makes 2-pt layup from 2 ft (ATL 124, CHO 123)","Atlanta Hawks",2.5,8,4.2,"ATLCHO"
+"Kemba Walker misses 2-pt layup from 10 ft (block by John Collins) (CHO 123, ATL 124)","Charlotte Hornets",10.5,1,1.3,"ATLCHO"
+"Kevin Durant misses 2-pt jump shot from 14 ft (GSW 115, SAC 116)","Golden State Warriors",14.5,1,19.2,"SACGSW1"
+"Klay Thompson misses 2-pt jump shot from 6 ft (block by Willie Cauley-Stein) (GSW 115, SAC 116)","Golden State Warriors",6.5,1,8.2,"SACGSW1"
+"Klay Thompson makes 2-pt layup from 1 ft (GSW 117, SAC 116)","Golden State Warriors",1.2,8,5.3,"SACGSW1"
+"Buddy Hield misses 2-pt layup from 8 ft (SAC 116, GSW 117)","Sacramento Kings",8.5,1,4.4,"SACGSW1"
+"Marvin Bagley misses 2-pt layup from 1 ft (SAC 116, GSW 117)","Sacramento Kings",1.1,1,3.3,"SACGSW1"
+"Marvin Williams misses 3-pt jump shot from 22 ft (CHO 104, OKC 105)","Charlotte Hornets",22.2,3,14.2,"CHOOKC"
+"Kemba Walker misses 3-pt jump shot from 25 ft (CHO 104, OKC 107)","Charlotte Hornets",25.4,3,3.4,"CHOOKC"
+"Jamal Crawford makes 2-pt jump shot from 17 ft (PHO 116, MIL 114)","Phoenix Suns",17.4,8,0.4,"MILPHO"
+"Lou Williams misses 3-pt jump shot from 27 ft (LAC 95, MEM 96)","LA Clippers",27.3,3,3.7,"LACMEM"
+"Blake Griffin makes 3-pt jump shot from 30 ft (DET 98, HOU 96)","Detroit Pistons",30.3,10,3.9,"HOUDET"
+"Eric Gordon makes 2-pt layup from 3 ft (assist by Chris Paul) (HOU 98, DET 98)","Houston Rockets",0.3,10,0.1,"HOUDET"
+"DeMar DeRozan makes 2-pt jump shot from 15 ft (SAS 103, MEM 102)","San Antonio Spurs",15.3,8,1.7,"SASMEM"
+"LaMarcus Aldridge misses 3-pt jump shot from 25 ft (SAS 103, MEM 104)","San Antonio Spurs",25.4,3,0.7,"SASMEM"
+"Kyle Korver misses 3-pt jump shot from 28 ft (CLE 102, LAL 105)","Cleveland Cavs",28.2,3,18.4,"LALCLE"
+"Evan Fournier makes 2-pt dunk from 3 ft (ORL 91, TOR 91)","Orlando Magic",3.2,8,2.5,"ORLTOR"
+"Nikola Vucevic misses 3-pt jump shot from 67 ft (ORL 91, TOR 93)","Orlando Magic",49.2,3,2.5,"ORLTOR"
+"Danny Green makes 2-pt jump shot from 6 ft (assist by Kyle Lowry) (TOR 93, ORL 91)","Toronto Raptors",6.3,8,0.5,"ORLTOR"
+"Kevin Durant misses 2-pt jump shot from 11 ft (GSW 108, DAL 109)","Golden State Warriors",11.6,1,23.6,"GSWDAL"
+"Klay Thompson misses 2-pt jump shot from 16 ft (GSW 108, DAL 110)","Golden State Warriors",16.6,1,10.6,"GSWDAL"
+"Jimmy Butler misses 2-pt jump shot from 20 ft (PHI 110, CHO 110)","Philadelphia Sixers",20.6,1,1.9,"CHOPHI"
+"Kawhi Leonard misses 2-pt jump shot from 17 ft (TOR 107, BOS 107)","Toronto Raptors",17.5,1,1.2,"TORBOS"
+"Blake Griffin misses 2-pt jump shot from 7 ft (DET 104, TOR 104)","Detroit Pistons",7.4,1,11.6,"TORDET"
+"Glenn Robinson misses 2-pt layup from 2 ft (block by Pascal Siakam) (DET 104, TOR 104)","Detroit Pistons",2.4,1,1.1,"TORDET"
+"Reggie Bullock makes 2-pt jump shot from 5 ft (assist by Jose Calderon) (DET 106, TOR 104)","Detroit Pistons",5.6,8,0.8,"TORDET"
+"Terrence Ross makes 3-pt jump shot from 27 ft (ORL 109, PHI 106)","Orlando Magic",27.3,10,8.5,"ORLPHI"
+"Khris Middleton misses 3-pt jump shot from 29 ft (MIL 113, MEM 116)","Milwuakee Bucks",29.1,3,0.7,"MEMMIL"
+"Lou Williams misses 2-pt jump shot from 20 ft (LAC 106, GSW 106)","LA Clippers",20.4,1,5.9,"GSWLAC"
+"Kyle Kuzma misses 2-pt layup from 3 ft (block by Vince Carter) (LAL 105, ATL 106)","LA Lakers",3.4,1,16.9,"ATLLAL"
+"LeBron James makes 2-pt dunk at rim (LAL 107, ATL 106)","LA Lakers",2.4,8,15.5,"ATLLAL"
+"Kyle Kuzma misses 2-pt layup at rim (LAL 105, ATL 106)","LA Lakers",1.4,1,16.5,"ATLLAL"
+"Trae Young misses 2-pt layup from 2 ft (block by Tyson Chandler) (ATL 106, LAL 107)","Atlanta Hawks",2.7,1,0.5,"ATLLAL"
+"Marc Gasol misses 2-pt jump shot from 18 ft (MEM 102, PHI 102)","Memphis Grizzlies",18.5,1,0.5,"PHIMEM"
+"Eric Bledsoe makes 3-pt jump shot from 26 ft (MIL 119, LAC 119)","Milwuakee Bucks",26.5,10,8.5,"LACMIL"
+"Danilo Gallinari misses 2-pt jump shot from 20 ft (LAC 119, MIL 119)","Milwuakee Bucks",20.5,1,2.3,"LACMIL"
+"Collin Sexton misses 2-pt layup from 3 ft (CLE 98, CHI 99)","Cleveland Cavs",3.5,1,3.3,"CLECHI"
+"Collin Sexton misses 2-pt layup from 3 ft (block by Jabari Parker) (CLE 98, CHI 99)","Cleveland Cavs",3.1,1,0.3,"CLECHI"
+"J.J. Redick misses 3-pt jump shot from 34 ft (PHI 119, CHO 119)","Philadelphia Sixers",34.3,3,1.5,"CHOPHI1"
+"Kemba Walker misses 2-pt jump shot from 13 ft (CHO 119, PHI 119)","Charlotte Hornets",13.3,1,1.2,"CHOPHI1"
+"Caris LeVert makes 2-pt jump shot from 12 ft (BRK 112, DEN 110)","Brooklyn Nets",12.1,8,1.7,"DENBRK"
+"Malik Beasley misses 3-pt jump shot from 28 ft (DEN 110, BRK 112)","Denver Nuggets",28.1,3,4.7,"DENBRK"
+"Marcus Morris makes 3-pt jump shot from 26 ft (assist by Kyrie Irving) (BOS 100, PHO 100)","Boston Celtics",26.1,10,1.7,"BOSPHO"
+"Devin Booker misses 3-pt jump shot from 69 ft (PHO 100, BOS 100)","Phoenix Suns",49.1,3,0.4,"BOSPHO"
+"Jamal Murray makes 2-pt jump shot from 21 ft (DEN 87, MEM 87)","Denver Nuggets",21.1,1,17.6,"MEMDEN"
+"Nikola Jokic misses 3-pt jump shot from 26 ft (DEN 87, MEM 89)","Denver Nuggets",26.3,3,2.4,"MEMDEN"
+"Jamal Murray misses 2-pt layup from 8 ft (DEN 87, MEM 89)","Denver Nuggets",8.3,1,5.4,"MEMDEN"
+"Derrick Rose misses 3-pt jump shot from 29 ft (MIN 110, LAL 112)","Minnesota TWolves",29.3,3,4.3,"LALMIN"
+"George Hill misses 2-pt jump shot from 4 ft (block by Nikola Vucevic) (CLE 100, ORL 100)","Cleveland Cavs",4.2,1,2.3,"CLEORL"
+"Evan Fournier makes 2-pt jump shot from 24 ft (assist by Aaron Gordon) (ORL 102, CLE 100)","Orlando Magic",24.2,10,4.3,"CLEORL"
+"Allonzo Trier misses 2-pt jump shot from 17 ft (NYK 102, CHI 102)","New York Knicks",17.2,1,3.5,"NYKCHI"
+"Mario Hezonja misses 2-pt layup from 1 ft (NYK 102, CHI 102)","New York Knicks",1.2,1,1.5,"NYKCHI"
+"Victor Oladipo misses 3-pt jump shot from 28 ft (IND 93, HOU 96)","Indiana Pacers",28.4,3,7.5,"INDHOU"
+"Andre Drummond makes 2-pt layup at rim (DET 105, MIA 105)","Indiana Pacers",1.4,1,0.5,"MIADET"
+"Reggie Jackson misses 2-pt layup from 5 ft (DET 103, MIA 105)","Detroit Pistons",5.4,1,0.5,"MIADET"
+"Devin Booker makes 2-pt jump shot from 17 ft (PHO 102, MEM 100)","Phoenix Suns",17.5,1,2.7,"PHOMEM"
+"Mike Conley misses 3-pt jump shot from 30 ft (MEM 100, PHO 102)","Memphis Grizzlies",30.5,3,4.7,"PHOMEM"
+"Victor Oladipo makes 3-pt jump shot from 27 ft (IND 102, BOS 101)","Indiana Pacers",27.5,10,4.3,"INDBOS"
+"Darren Collison makes 2-pt jump shot from 19 ft (assist by Bojan Bogdanovic) (IND 107, CHI 105)","Indiana Pacers",19.5,8,7.3,"INDCHI"
+"Zach LaVine misses 2-pt jump shot from 14 ft (CHI 105, IND 107)","Chicago Bulls",14.6,1,7.3,"INDCHI"
+"Justin Holiday misses 3-pt jump shot from 26 ft (CHI 105, IND 107)","Chicago Bulls",5.6,3,5.3,"INDCHI"
+"Antonio Blakeney misses 2-pt jump shot from 19 ft (block by Myles Turner) (CHI 105, IND 107)","Chicago Bulls",19.6,1,0.3,"INDCHI"
+"Giannis Antetokounmpo misses 2-pt layup from 2 ft (MIL 111, BOS 113)","Milwuakee Bucks",2.4,1,18.5,"BOSMIL"
+"Rudy Gobert misses 2-pt hook shot from 6 ft (UTA 123, MIN 125)","Utah Jazz",6.2,1,22.5,"MINUTA"
+"Jae Crowder misses 3-pt jump shot from 27 ft (UTA 125, MIN 128)","Utah Jazz",27.2,3,13.8,"MINUTA"
+"Joe Ingles misses 3-pt jump shot from 23 ft (UTA 125, MIN 128)","Utah Jazz",23.2,3,7.3,"MINUTA"
+"Dante Exum misses 3-pt jump shot from 23 ft (block by Derrick Rose) (UTA 125, MIN 128)","Utah Jazz",23.6,3,2.5,"MINUTA"
+"Luka Doncic makes 2-pt jump shot from 7 ft (DAL 113, LAL 113)","Dallas Mavericks",7.6,8,7.2,"DALLAL"
+"J.J. Barea misses 3-pt jump shot from 38 ft (DAL 113, LAL 114)","Dallas Mavericks",38.2,3,0.2,"DALLAL"
+"Zach LaVine misses 2-pt jump shot from 4 ft (block by Nikola Jokic) (CHI 98, DEN 98)","Chicago Bulls",4.2,1,7.2,"CHIDEN"
+"Justin Holiday misses 2-pt jump shot from 20 ft (block by Paul Millsap) (CHI 98, DEN 98)","Chicago Bulls",20.2,1,5.3,"CHIDEN"
+"Jabari Parker misses 3-pt jump shot from 31 ft (CHI 98, DEN 98)","Chicago Bulls",31.2,3,7.3,"CHIDEN"
+"Spencer Dinwiddie makes 3-pt jump shot from 26 ft (assist by Allen Crabbe) (BRK 110, DET 110)","Brooklyn Nets",26.5,10,21.6,"BRKDET"
+"Reggie Jackson misses 2-pt layup from 5 ft (DET 110, BRK 110)","Detroit Pistons",5.5,1,0.6,"BRKDET"
+"DeMar DeRozan misses 2-pt jump shot from 12 ft (SAS 102, DAL 102)","San Antonio Spurs",12.5,1,0.3,"SASDAL"
+"LeBron James misses 3-pt jump shot from 31 ft (LAL 105, SAS 108)","LA Lakers",31.5,3,5.6,"LALSAS"
+"Jrue Holiday makes 2-pt jump shot from 17 ft (NOP 116, BRK 115)","New Orleans Pelicans",17.3,8,3.2,"NOPBRK"
+"Zach LaVine misses 2-pt jump shot from 21 ft (CHI 110, CHO 110)","Chicago Bulls",21.4,3,7.2,"CHICHO"
+"Malik Monk misses 3-pt jump shot from 23 ft (CHO 110, CHI 112)","Charlotte Hornets",23.4,3,0.2,"CHICHO"
+"Reggie Bullock misses 2-pt jump shot from 7 ft (DET 120, PHI 120)","Detroit Pistons",7.4,1,11.4,"DETPHI"
+"Dario Saric misses 3-pt jump shot from 28 ft (PHI 120, DET 120)","Philadelphia Sixers",28.5,3,1.4,"DETPHI"
+"Damian Lillard misses 3-pt jump shot from 25 ft (POR 108, WAS 108)","Portland Blazers",22.3,3,22.5,"PORWAS"
+"Jusuf Nurkic misses 2-pt layup from 3 ft (block by Kelly Oubre) (POR 108, WAS 108)","Portland Blazers",3.3,1,18.3,"PORWAS"
+"Nik Stauskas makes 3-pt jump shot from 23 ft (assist by Damian Lillard) (POR 111, WAS 108)","Portland Blazers",23.3,10,13.6,"PORWAS"
+"Bradley Beal makes 3-pt jump shot from 25 ft (assist by John Wall) (WAS 111, POR 111)","Washington Wizards",26.3,10,7.4,"PORWAS"
+"Jusuf Nurkic misses 2-pt layup from 2 ft (POR 111, WAS 111)","Portland Blazers",2.3,1,0.4,"PORWAS"
+"Damian Lillard misses 2-pt layup from 1 ft (block by Bradley Beal) (POR 111, WAS 111)","Portland Blazers",1.3,1,0.2,"PORWAS"
+"LeBron James makes 3-pt jump shot from 28 ft (LAL 128, SAS 128)","LA Lakers",3.3,10,3.2,"SASLAL"
+"DeMar DeRozan misses 3-pt jump shot from 26 ft (SAS 128, LAL 128)","San Antonio Spurs",26.3,3,1.5,"SASLAL"
+"Kyrie Irving misses 3-pt jump shot from 24 ft (BOS 90, ORL 93)","Boston Celtics",24.7,3,5.7,"ORLBOS"
+"Gordon Hayward misses 3-pt jump shot from 26 ft (BOS 90, ORL 93)","Boston Celtics",26.7,3,1.5,"ORLBOS"
+"Damian Jones misses 2-pt layup from 3 ft (block by Juan Hernangomez) (GSW 98, DEN 100)","Golden State Warriors",3.5,1,2.5,"GSWDEN"
+"J.J. Redick makes 3-pt jump shot from 27 ft (assist by Joel Embiid) (PHI 116, ORL 114)","Philadelphia Sixers",27.4,10,17.3,"PHIORL"
+"Terrence Ross misses 3-pt jump shot from 27 ft (ORL 115, PHI 116)","Orlando Magic",27.9,3,2.5,"PHIORL"
+"Dwyane Wade misses 3-pt jump shot from 25 ft (MIA 110, CHO 112)","Miami Heat",25.5,3,13.4,"MIACHO"
+"Dwyane Wade makes 2-pt layup from 1 ft (MIA 112, CHO 112)","Miami Heat",1.3,8,12.3,"MIACHO"
+"Dennis Smith makes 2-pt jump shot from 20 ft (DAL 136, MIN 134)","Dallas Mavs",20.6,1,6.3,"DALMIN1"
+"Zach LaVine makes 3-pt jump shot from 26 ft (CHI 116, DET 116)","Chicago Bulls",26.3,10,24.3,"CHIDET"
+"Ish Smith makes 2-pt layup from 2 ft (DET 118, CHI 116)","Detroit Pistons",2.3,8,5.2,"CHIDET"
+"Kevin Durant misses 2-pt jump shot from 14 ft (GSW 122, UTA 123)","Golden State Warriors",14.5,1,2.4,"UTAGSW"
+"Donovan Mitchell misses 3-pt jump shot from 23 ft (UTA 123, GSW 124)","Utah Jazz",23.3,3,0.4,"UTAGSW"
+"Jonas Jerebko makes 2-pt layup from 1 ft (GSW 124, UTA 123)","Golden State Warriors",1.3,8,0.9,"UTAGSW"
+"Caris LeVert makes 2-pt layup from 2 ft (BRK 107, NYK 105)","Brooklyn Nets",2.5,8,1.9,"BRKNYK"
+"Tim Hardaway misses 3-pt jump shot from 30 ft (NYK 105, BRK 107)","New York Knicks",30.5,3,0.9,"BRKNYK"
+"Dwyane Wade misses 2-pt jump shot from 22 ft (MIA 111, WAS 112)","Miami Heat",22.4,1,3.9,"MIAWAS"
+"Kelly Olynyk makes 2-pt layup from 3 ft (MIA 113, WAS 112)","Miami Heat",3.6,8,0.5,"MIAWAS"
+"Derrick Rose misses 2-pt layup from 3 ft (MIN 108, SAS 110)","Minnesota TWolves",3.6,1,16.4,"MINSAS"
+"Rodney McGruder misses 3-pt jump shot from 53 ft (MIA 101, ORL 104)","Miami Heat",49.9,3,0.4,"MIAORL"
+"Joe Harris misses 3-pt jump shot from 27 ft (BRK 100, DET 103)","Brooklyn Nets",27.9,3,3.7,"BRKDET"
+"Kemba Walker misses 2-pt layup from 3 ft (CHO 112, MIL 113)","Charlotte Hornets",3.5,1,3.9,"CHOMIL"
+"Nicolas Batum misses 3-pt jump shot from 26 ft (CHO 112, MIL 113)","Charlotte Hornets",26.4,3,0.9,"CHOMIL"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
