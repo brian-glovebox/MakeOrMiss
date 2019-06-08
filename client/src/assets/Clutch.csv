@@ -1,28 +1,31 @@
 "team";"key";"value"
-"Houston Rockets";"James Harden";28.5
-"L.A. Lakers";"LeBron James";24.3
-"Toronto Raptors";"Kawhi Leonard";24.2
-"Boston Celtics";"Kyrie Irving";23.9
-"Charlotte Hornets";"Kemba Walker";22.7
-"Memphis Grizzlies";"Mike Conley";22.5
-"Milwuakee Bucks";"Giannis Antetkounmpo";22.3
-"Atlanta Hawks";"John Collins";22
-"Detroit Pistons";"Andre Drummond";21.9
-"OKC Thunder";"Paul George";20.7
-"Golden State Warriors";"Kevin Durant";20.2
-"Denver Nuggets";"Nikola Jokic";20
-"Golden State Warriors";"Stephen Curry";19.8
-"L.A. Clippers";"Lou Williams";19.4
-"Dallas Mavericks";"Luka Doncic";19.1
-"Philadelphia 76ers";"Joel Embiid";19.0
-"Oklahoma City Thunder";"Russell Westbrook";18.7
-"L.A. Clippers";"Danilo Gallinari";18.5
-"New Orleans Hornets";"Anthony Davis";18.5
-"Atlanta Hawks";"Trae Young";18.4
-"New York Knicks";"Deandre Jordan";18.3
-"Miami Heat";"Bam Adebayo";18.3
-"Philadealphia 76ers";"Jimmy Butler";18.2
-"Brooklyn Nets";"Deangelo Russell";18
-"Portland Trail Blazers";"Damien Lillard";18.1
-"Sacramento Kings";"Deaaron Fox";18
-"Chicago Bulls";"Lauri Markkanen";17.9
+"HOU";"Houston";30.7
+"LAL";"LAL";37.5
+"TOR";"Toronto";40.0
+"BOS";"Boston";38.4
+"CHO";"Charlotte";22.2
+"MEM";"Memphis";7.1
+"MIL";"Milwuakee";25.0
+"ATL";"Atlanta";53.8
+"DET";"Detroit";33.3
+"OKC";"OKC";29.6
+"GSW";"GSW";33.3
+"DEN";"Denver";38.4
+"CHI";"Chicago";33.3
+"LAC";"LAC";27.2
+"DAL";"Dallas";50.0
+"PHI";"Philadelphia";27.2
+"WAS";"Washington";30.0
+"IND";"Indiana";10.0
+"NOP";"NOP";30.7
+"PHO";"Phoenix";54.5
+"NYK";"NYK";18.1
+"MIA";"Miami";21.7
+"SAS";"SAS";25.0
+"BRK";"Brooklyn";36.8
+"POR";"Portland";11.7
+"SAC";"Sacramento";18.7
+"ORL";"Orlando";60.0
+"CLE";"Cleveland";33.3
+"UTA";"Utah";9.0
+"MIN";"Minnesota";20.0
