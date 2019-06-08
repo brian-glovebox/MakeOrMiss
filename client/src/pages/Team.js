@@ -2,7 +2,7 @@ import React from "react";
 import * as d3 from 'd3';
 import Clutch from '../assets/Clutch.csv'
 
-class About extends React.Component {
+class Team extends React.Component {
 
     CB(){
       // set the dimensions and margins of the graph
@@ -24,12 +24,11 @@ class About extends React.Component {
     
       // Color palette for continents?
       var color = d3.scaleOrdinal()
-        .domain(["L.A. Lakers", "Houston Rockets", "L.A. Clippers", "Oklahoma City Thunder", "Boston Celtics"])
-        .range(d3.schemeSet1);
-    
+      .domain(["MIL", "TOR", "PHI", "BOS", "IND", "BRK", "ORL", "DET", "CHO", "MIA", "WAS", "ATL", "CHI", "CLE", "NYK"])
+        .range([ "#00471B", "#CE1141","#006BB6", "#007A33", "#FDBB30","#000000","#0077C0","#C8102E","#1D1160","#98002E","#E31837","#FFCD00","#BC032B","#6F263D", "#F58426"])    
       // Size scale for players
       var size = d3.scaleLinear()
-        .domain([0, 30])
+        .domain([0, 60])
         .range([5,100])  // circle will be between 7 and 55 px wide
     
       // create a tooltip
@@ -50,7 +49,7 @@ class About extends React.Component {
       }
       var mousemove = function(d) {
         Tooltip
-          .html('<u>' + d.key + '</u>' + "<br>" + d.value + " PIE")
+          .html('<u>' + d.key + '</u>' + "<br>" + d.value + " FG %")
           .style("left", (d3.mouse(this)[0]+20) + "px")
           .style("top", (d3.mouse(this)[1]+20) + "px")
       }
@@ -127,4 +126,4 @@ class About extends React.Component {
     
 }
 
-export default About;
+export default Team;

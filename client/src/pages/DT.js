@@ -2,7 +2,7 @@ import React from "react";
 import * as d3 from 'd3';
 import Scatter from '../assets/Scatter.csv'
 
-class Contact extends React.Component {
+class DT extends React.Component {
 
 BC(){
   // set the dimensions and margins of the graph
@@ -242,4 +242,4 @@ render(){
 
 }
 
-export default Contact;
+export default DT;
