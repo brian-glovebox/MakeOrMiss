@@ -162,7 +162,7 @@ function projectX(x)
   
 
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#wins").append("svg")
     .attr("width", diameter)
     .attr("height", diameter)
   .append("g")
