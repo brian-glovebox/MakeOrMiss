@@ -6,11 +6,11 @@ class Team extends React.Component {
 
     CB(){
       // set the dimensions and margins of the graph
-    var width = 2000
-    var height = 2000
+    var width = 1200
+    var height = 800
     
     // append the svg object to the body of the page
-    var svg = d3.select("#CB")
+    var svg = d3.select("#team")
       .append("svg")
         .attr("width", width)
         .attr("height", height)
@@ -120,10 +120,9 @@ class Team extends React.Component {
 
     render (){
     return (
-      <div id="CB"></div>
+      <div id="team"></div>
     )
     }
     
 }
-
 export default Team;

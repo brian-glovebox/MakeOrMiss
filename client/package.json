@@ -21,7 +21,8 @@
     "react-flip-move": "^3.0.3",
     "react-heatmap-grid": "^0.8.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "^2.1.1"
+    "react-scripts": "^2.1.1",
+    "react-scroll": "^1.7.11"
   },
   "scripts": {
     "start": "react-scripts start",
