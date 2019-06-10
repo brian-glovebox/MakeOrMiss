@@ -98,7 +98,7 @@ body {
   #shuffle {
     position: relative;
     width: 90%;
-    max-width: 800px;
+    max-width: 80px;
     margin: auto;
   
     header {
@@ -130,11 +130,10 @@ body {
           margin: auto;
           width: 52px;
           height: 52px;
-          background: fuchsia;
           border: 0;
           border-radius: 4px;
           color: white;
-          font-size: 20px;
+          font-size: 80px;
         }
       }
   
@@ -147,7 +146,6 @@ body {
           font-size: 14px;
           background: transparent;
           border: 0;
-          color: fuchsia;
         }
       }
   
@@ -547,8 +545,6 @@ text {
   cursor: pointer;
 }
 
-.section {
-}
 
 .section-dark {
   background: #333;
@@ -560,3 +556,8 @@ text {
   margin: 0 auto;
   padding: 40px;
 }
+
+#standings {
+  min-height: 1100px;
+}
+

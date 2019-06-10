@@ -62,9 +62,14 @@ d3.csv(Scatter).then (function(data) {
     .range([2, 30]);
 
   // Add a scale for bubble color
-  var myColor = d3.scaleOrdinal()
-    .domain(["LAL", "ORL", "GSW", "MIA", "HOU", "MIL", "TOR", "PHI", "BOS", "IND", "BRK", "DET", "CHO", "WAS", "ATL", "CHI", "CLE", "NYK", "DEN", "POR", "UTA", "OKC", "SAS", "LAC", "SAC", "MIN", "MEM", "NOP", "DAL", "PHO"])
-    .range(d3.schemeSet1);
+  var color = d3.scaleOrdinal()
+  .domain(["ATL", "BOS", "BRK", "CHO", "CHI", "CLE", "DAL", "DEN", "DET", "GSW", "HOU", "IND", "LAC", "LAL", "MEM", "MIA", "MIL", "MIN", "NOP", "NYK", "OKC", "ORL", "PHI", "PHO", "POR", "SAC", "SAS", "TOR", "UTA", "WAS"])
+  .range(["#E03A3E","#007A33","#000000","#1D1160","#CE1141","#6F263D","#00538C","#0E2240","#C8102E","#006BB6","#CE1141","#002D62","#C8102E","#552583","#5D76A9","#98002E","#00471B","#0C2340","#0C2340","#006BB6","#007AC1","#0077C0","#006BB6","#1D1160","#E03A3E","#5A2D81","#C4CED4","#CE1141","#002B5C","#002B5C"])    
+  
+  var line = d3.scaleOrdinal()
+  .domain(["ATL", "BOS", "BRK", "CHO", "CHI", "CLE", "DAL", "DEN", "DET", "GSW", "HOU", "IND", "LAC", "LAL", "MEM", "MIA", "MIL", "MIN", "NOP", "NYK", "OKC", "ORL", "PHI", "PHO", "POR", "SAC", "SAS", "TOR", "UTA", "WAS"])
+  .range(["#C1D32F","#BA9653","#FFFFFF","#00788C","#000000","#041E42","#002B5E","#FEC524","#006BB6","#FDB927","#000000","#FDBB30","#1D428A","#FDB927","#12173F","#F9A01B","#EEE1C6","#236192","#C8102E","#F58426","#EF3B24","#C4CED4","#ED174C","#E56020","#000000","#63727A","#000000","#000000","#00471B","#E31837"])
+
 
 
   // ---------------------------//
@@ -121,7 +126,7 @@ d3.csv(Scatter).then (function(data) {
 
   // And when it is not hovered anymore
   var noHighlight = function(d){
-    d3.selectAll(".bubbles").style("opacity", 1)
+    d3.selectAll(".bubbles").style("opacity", .5)
   }
 
 
@@ -139,7 +144,9 @@ d3.csv(Scatter).then (function(data) {
       .attr("cx", function (d) { return x(d.timer); } )
       .attr("cy", function (d) { return y(d.shotdistance); } )
       .attr("r", function (d) { return z(d.makeormiss); } )
-      .style("fill", function (d) { return myColor(d.teamname); } )
+      .style("fill", function (d) { return color(d.teamname); } )
+      .attr("stroke", function(d){ return line(d.teamname)})
+      .style("stroke-width", 1)
       .attr("opacity", "0.5")
     // -3- Trigger the functions for hover
     .on("mouseover", showTooltip )
@@ -207,10 +214,12 @@ d3.csv(Scatter).then (function(data) {
       .data(allgroups)
       .enter()
       .append("circle")
-        .attr("cx", 390)
+        .attr("cx", 900)
         .attr("cy", function(d,i){ return 10 + i*(size+5)}) // 100 is where the first dot appears. 25 is the distance between dots
         .attr("r", 7)
-        .style("fill", function(d){ return myColor(d)})
+        .style("fill", function(d){ return color(d)})
+        .attr("stroke", function(d){ return line(d)})
+        .style("stroke-width", 1)
         .on("mouseover", highlight)
         .on("mouseleave", noHighlight)
 
@@ -219,9 +228,9 @@ d3.csv(Scatter).then (function(data) {
       .data(allgroups)
       .enter()
       .append("text")
-        .attr("x", 390 + size*.8)
+        .attr("x", 900 + size*.8)
         .attr("y", function(d,i){ return i * (size + 5) + (size/2)}) // 100 is where the first dot appears. 25 is the distance between dots
-        .style("fill", function(d){ return myColor(d)})
+        .style("fill", function(d){ return color(d)})
         .text(function(d){ return d})
         .attr("text-anchor", "left")
         .style("alignment-baseline", "middle")

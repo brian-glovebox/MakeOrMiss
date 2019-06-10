@@ -62,7 +62,8 @@ class ListItem extends Component {
 
   render() {
     const listClass = `list-item card ${this.props.view}`;
-    const style = { zIndex: 100 - this.props.index };
+    const style = { zIndex: 100 - this.props.index,
+                    text: 180 };
 
     return (
       <li id={this.props.id} className={listClass} style={style}>
