@@ -20,6 +20,7 @@
     "nodemon": "^1.18.7"
   },
   "dependencies": {
+    "antd": "^3.19.1",
     "axios": "^0.18.0",
     "d3": "^5.9.2",
     "d3-hexbin": "^0.2.2",
@@ -27,6 +28,7 @@
     "if-env": "^1.0.4",
     "moment": "^2.24.0",
     "mongoose": "^5.3.16",
-    "react-burger-menu": "^2.6.10"
+    "react-burger-menu": "^2.6.10",
+    "react-scroll": "^1.7.11"
   }
 }
