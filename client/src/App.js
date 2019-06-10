@@ -14,40 +14,20 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    // <Router>
-    // <div>
-    //   <Nav />
-    //   {/* <TopBar />
-    //   <Main /> */}
-    //   <Switch>
-    //     <Route exact path="/" render ={(props) => <Main {...props}/>}/>
-    //     <Route exact path="/about" render ={(props) => <About {...props}/>}/>
-    //     <Route exact path="/contact" render ={(props) => <Contact {...props}/>}/>
-    //     <Route exact path="/dv1" render ={(props) => <DV1 {...props}/>}/>
-    //     <Route exact path="/standings" render ={(props) => <Standings {...props}/>}/>
-    //     <Route exact path="/dv3" render ={(props) => <DV3 {...props}/>}/>
-    //   </Switch>
-    // </div>
-    // </Router>
-
-    <div className="App">
-        <Navbar />
-        <Main
-          id="main"
-        />
-        <Standings
-          id="standings"
-        />
-        <Wins
-          id="wins"
-        />
-        <DT
-          id="dt"
-        />
-        <Team
-          id="team"
-        />
-      </div>
+    <Router>
+    <div>
+      <Nav />
+      {/* <TopBar />
+      <Main /> */}
+      <Switch>
+        <Route exact path="/" render ={(props) => <Main {...props}/>}/>
+        <Route exact path="/standings" render ={(props) => <Standings {...props}/>}/>
+        <Route exact path="/wins" render ={(props) => <Wins {...props}/>}/>
+        <Route exact path="/dt" render ={(props) => <DT {...props}/>}/>
+        <Route exact path="/team" render ={(props) => <Team {...props}/>}/>
+      </Switch>
+    </div>
+    </Router>
 
   );
 }

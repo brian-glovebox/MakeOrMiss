@@ -84,12 +84,13 @@ d3.csv(Scatter).then (function(data) {
       .style("background-color", "black")
       .style("border-radius", "5px")
       .style("padding", "10px")
-      .style("width", "100px")
+      .style("width", "300px")
       .style("length", "100px")
       .style("color", "white")
 
   // -2- Create 3 functions to show / update (when mouse move but stay on same circle) / hide the tooltip
   var showTooltip = function(d) {
+
     tooltip
       .transition()
       .duration(2000)
@@ -126,13 +127,14 @@ d3.csv(Scatter).then (function(data) {
 
   // And when it is not hovered anymore
   var noHighlight = function(d){
-    d3.selectAll(".bubbles").style("opacity", .5)
+    d3.selectAll(".bubbles").style("opacity", 0.5)
   }
 
 
   // ---------------------------//
   //       CIRCLES              //
   // ---------------------------//
+
 
   // Add dots
   svg.append('g')
@@ -152,7 +154,6 @@ d3.csv(Scatter).then (function(data) {
     .on("mouseover", showTooltip )
     .on("mousemove", moveTooltip )
     .on("mouseleave", hideTooltip )
-
  
 
 
@@ -170,7 +171,7 @@ d3.csv(Scatter).then (function(data) {
       .enter()
       .append("circle")
         .attr("cx", xCircle)
-        .attr("cy", function(d){ return height + 5 - z(d) } )
+        // .attr("cy", function(d){ return height + 24 - z(d) } )
         .attr("r", function(d){ return z(d) })
         .style("fill", "none")
         .attr("stroke", "black")
@@ -204,12 +205,12 @@ d3.csv(Scatter).then (function(data) {
     // svg.append("text")
     //   .attr('x', xCircle)
     //   .attr("y", height - 100 +30)
-    //   .text("makeormissulation (M)")
+    //   .text("(M)")
     //   .attr("text-anchor", "middle")
 
     // Add one dot in the legend for each name.
     var size = 20
-    var allgroups = ["LAL", "ORL", "GSW", "MIA", "HOU", "MIL", "TOR", "PHI", "BOS", "IND", "BRK", "DET", "CHO", "WAS", "ATL", "CHI", "CLE", "NYK", "DEN", "POR", "UTA", "OKC", "SAS", "LAC", "SAC", "MIN", "MEM", "NOP", "DAL", "PHO"]
+    var allgroups = ["ATL", "BOS", "BRK", "CHO", "CHI", "CLE", "DAL", "DEN", "DET", "GSW", "HOU", "IND", "LAC", "LAL", "MEM", "MIA", "MIL", "MIN", "NOP", "NYK", "OKC", "ORL", "PHI", "PHO", "POR", "SAC", "SAS", "TOR", "UTA", "WAS"]
     svg.selectAll("myrect")
       .data(allgroups)
       .enter()

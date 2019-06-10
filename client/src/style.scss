@@ -1,5 +1,3 @@
-@import '~antd/dist/antd.css';
-
 /* BODY */
 
 html,body{
@@ -10,6 +8,7 @@ html,body{
   font-size: 2vh; 
   background-color: #323639;
   color:black;
+
 }
 
 body {
@@ -20,78 +19,79 @@ body {
 .windowBox {
   min-height: 600px;
   max-height: 600px;
-  max-width: 100vw;
+  max-width: 100vh;
+  padding-left: 200px;
   
 }
 
 /* NAV BAR */
 
-// /* Position and sizing of burger button */
+/* Position and sizing of burger button */
 .bm-burger-button {
-    position: fixed;
-    width: 36px;
-    height: 30px;
-    left: 36px;
-    top: 36px;
-  }
-  
-  /* Color/shape of burger icon bars */
-  .bm-burger-bars {
-    background: whitesmoke;
-  }
-  
-  /* Color/shape of burger icon bars on hover*/
-  .bm-burger-bars-hover {
-    background: #a90000;
-  }
-  
-  /* Position and sizing of clickable cross button */
-  .bm-cross-button {
-    height: 24px;
-    width: 24px;
-  }
-  
-  /* Color/shape of close button cross */
-  .bm-cross {
-    background: #bdc3c7;
-  }
-  
-  /*
-  Sidebar wrapper styles
-  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
-  */
-  .bm-menu-wrap {
-    position: fixed;
-    height: 100%;
-  }
-  
-  /* General sidebar styles */
-  .bm-menu {
-    background: #151C1D;
-    padding: 2.5em 1.5em 0;
-    font-size: 1.15em;
-  }
-  
-  /* Morph shape necessary with bubble or elastic */
-  .bm-morph-shape {
-    fill: #373a47;
-  }
-  
-  /* Wrapper for item list */
-  .bm-item-list {
-    color: #b8b7ad;
-    padding: 0.8em;
-  }
-  
-  /* Individual item */
-  .bm-item {
-    display: inline-block;
-  }
-  
-  /* Styling of overlay */
-  .bm-overlay {
-    background: rgba(0, 0, 0, 0.3);
-  }
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
 
 // RESHUFFLE
 
@@ -174,289 +174,9 @@ body {
 }
   
 
-// Heatmap
-
-.container{
-  width: 1100px;
-  text-align: center
-}
-
-.yAxis {
-  path : line;
-    stroke: white
-}
-
-.tooltip {
-  background-color:lightgrey;
-  position: absolute;
-  opacity: 0;
-  width: 70px;
-  padding: 5px
-}
 
 
 
-#shot-chart {
-    width: 100%;
-    margin-top: -50px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/********SHOTCHART COURT STYLES****** */
-#shot-chart-container {
-    margin-top: -22%;
-    margin-bottom: 5%;
-}
-
-@media (min-width: 50em) {
-    #shot-chart-container {
-        margin-top: -15%;
-    }
-}
-
-@media (min-width: 55em) {
-    #shot-chart-container {
-        margin-top: -10%;
-    }
-}
-
-@media (min-width: 78em) {
-    #shot-chart-container {
-        padding-left: 1em;
-        margin-left: 33%;
-    }
-}
-
-#shot-chart-container .shot-chart {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media (min-width: 78em) {
-    #shot-chart-container .shot-chart {
-        margin: 0;
-    }
-}
-
-// svg {
-//     stroke-width: .2;
-// }
-
-// svg text {
-//     font-size: 0.2em;
-// }
-
-// svg text.legend-text {
-//     font-size: 0.1em;
-// }
-
-// svg rect {
-//     stroke: black;
-//     fill: none;
-// }
-
-// svg line {
-//     stroke: black;
-//     fill: none;
-// }
-
-/********END SHOTCHART COURT STYLES****** */
-/********SHOT STYLES****** */
-// svg circle {
-//     stroke: black;
-//     fill: none;
-// }
-
-// svg circle.shot.make {
-//     fill: green;
-//     stroke: white;
-//     stroke-width: 0.05;
-// }
-
-// svg circle.shot.miss {
-//     fill: red;
-//     stroke: white;
-//     stroke-width: 0.05;
-// }
-
-// path {
-//     stroke: white;
-//     stroke-width: 0.05;
-// }
-
-// path.shot {
-//     stroke: white;
-//     fill: none;
-//     stroke-width: 0.05;
-// }
-
-// /********END SHOT STYLES****** */
-// /********SHOT TOOLTIPS****** */
-// .d3-tip {
-//     line-height: 1;
-//     font-weight: lighter;
-//     padding: 12px;
-//     background: #006886;
-//     color: #fff;
-//     border-radius: 2px;
-//     pointer-events: none;
-// }
-
-// /* Creates a small triangle extender for the tooltip */
-// .d3-tip:after {
-//     box-sizing: border-box;
-//     display: inline;
-//     font-size: 10px;
-//     width: 100%;
-//     line-height: 1;
-//     color: #006886;
-//     position: absolute;
-//     pointer-events: none;
-// }
-
-// /* Northward tooltips */
-// .d3-tip.n:after {
-//     content: "▼";
-//     margin: -1px 0 0 0;
-//     top: 100%;
-//     left: 0;
-//     text-align: center;
-// }
-
-// /* Eastward tooltips */
-// .d3-tip.e:after {
-//     content: "◀";
-//     margin: -4px 0 0 0;
-//     top: 50%;
-//     left: -8px;
-// }
-
-// /* Southward tooltips */
-// .d3-tip.s:after {
-//     content: "▲";
-//     margin: 0 0 1px 0;
-//     top: -8px;
-//     left: 0;
-//     text-align: center;
-// }
-
-// /* Westward tooltips */
-// .d3-tip.w:after {
-//     content: "▶";
-//     margin: -4px 0 0 -1px;
-//     top: 50%;
-//     left: 100%;
-// }
-
-// Main.js in components folder 
-
-.player {
-  display: flex;
-  border : 3px solid black;
-
-  margin : 0 auto;
-  border-radius: 10px;
-  box-shadow : 5px 10px 10px black;
-}
-
-.main {
-  width: 750px;
-  margin : 0 auto;
-  height: 750px;
-}
-
-
-// profile.js 
-.profile {
-  width: 200px;
-  background-color: #303030;
-  font-size: 0.8em;
-  color: whitesmoke;
-}
-
-.profile-entry {
-  display: flex;
-  padding: 10px;
-}
-
-.profile-entry-left {
-  font-weight: bold;
-}
-
-.profile-entry-right {
-  flex: 1;
-  text-align: right;
-}
-
-.player-name {
-  font-weight: bold;
-  font-size: 25px;
-  padding: 10px;
-}
-
-.profile-pic {
-  width:100%;
-
-}
-
-.team-logo {
-  margin-left: 50px;
-  width: 50%;
-}
-
-// DataViewContainer.js
-.data-view {
-  flex : 1;
-}
-
-.shot-chart {
-  margin-top: 0;
-}
-
-
-.count {
-  margin-top: 10px;
-  height: 5%;
-}
-
-.button {
-  margin-bottom: 30px;
-}
-
-// DV1.js
-.DV1 {
-  text-align: center;
-}
-
-// SerchBar.js
-
-.search-bar {
-  width: 100%;
-  margin-bottom: 30px;
-}
-.player-option-image {
-  height : 32px;
-  margin-right: 15px;
-}
-
-.player-option-name {
-  font-size: 20px;
-}
-
-
-//LineG
-
-#lineG {
-  min-width: 80vw;
-}
-.axis {
-  opacity: .7;
-}
-.axis:hover {
-  opacity: 1;
-}
 
 // ConceptMap
 
@@ -498,66 +218,3 @@ text {
 .link {
   fill: none;
 }
-
-//NAVBAR
-
-
-:root {
-  --off-white: #fafafa;
-}
-.nav {
-  background-color: var(--off-white);
-  position: sticky;
-  top: 0px;
-  width: 100%;
-  height: 80px;
-  z-index: 1000;
-  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
-}
-
-.nav-logo {
-  height: 60px;
-  width: 60px;
-}
-
-.nav-logo:hover {
-  cursor: pointer;
-}
-
-.nav .nav-content {
-  max-width: 900px;
-  padding: 0rem 3rem;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
-
-.nav-item {
-  display: inline;
-  margin-left: 2rem;
-  color: #333;
-}
-
-.nav-item:hover {
-  color: black;
-  cursor: pointer;
-}
-
-
-.section-dark {
-  background: #333;
-  color: white;
-}
-
-.section-content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px;
-}
-
-#standings {
-  min-height: 1100px;
-}
-

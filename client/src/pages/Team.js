@@ -1,7 +1,7 @@
 import React from "react";
 import * as d3 from 'd3';
 import Clutch from '../assets/Clutch.csv'
-import { SSL_OP_CRYPTOPRO_TLSEXT_BUG } from "constants";
+
 
 class Team extends React.Component {
 
@@ -38,11 +38,12 @@ class Team extends React.Component {
         .range([5,100])  // circle will be between 7 and 55 px wide
     
       // create a tooltip
-      var Tooltip = d3.select("#CB")
+      var Tooltip = d3.select("#team")
         .append("div")
         .style("opacity", 0)
         .attr("class", "tooltip")
-        .style("background-color", "white")
+        .style("background-color", "black")
+        .style("color", "white")
         .style("border", "solid")
         .style("border-width", "2px")
         .style("border-radius", "5px")
