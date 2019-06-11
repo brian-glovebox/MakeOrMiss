@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Nav from "./components/Nav.js";
 import Main from "./pages/Main";
 import Team from "./pages/Team";
 import DT from "./pages/DT";
 import Shots from "./pages/Shots";
 import Standings from "./pages/Standings";
 import Wins from "./pages/Wins";
+import CustomNav from "./components/Nav"
 import Navbar from "./components/Navbar";
 // import { TopBar } from '../src/components/TopBar';
 // import { Main } from '../src/components/Main';
@@ -16,9 +16,8 @@ function App() {
   return (
     <Router>
     <div>
-      <Nav />
-      {/* <TopBar />
-      <Main /> */}
+      <CustomNav />
+      
       <Switch>
         <Route exact path="/" render ={(props) => <Main {...props}/>}/>
         <Route exact path="/standings" render ={(props) => <Standings {...props}/>}/>
