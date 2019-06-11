@@ -28,10 +28,11 @@ d3.csv(Scatter).then (function(data) {
 
   // Add X axis
   var x = d3.scaleLinear()
-    .domain([0, 25])
+    .domain([0, 0])
     .range([0, width]);
   svg.append("g")
     .attr("transform", "translate(0," + height + ")")
+    .attr("class", "myXaxis")   // Note that here we give a class to the X axis, to be able to call it later and modify it
     .call(d3.axisBottom(x).ticks(5));
 
   // Add X axis label:
@@ -43,9 +44,11 @@ d3.csv(Scatter).then (function(data) {
 
   // Add Y axis
   var y = d3.scaleLinear()
-    .domain([1, 50])
+    .domain([0, 0])
     .range([height, 0]);
   svg.append("g")
+  .attr("class", "myYaxis")   // Note that here we give a class to the X axis, to be able to call it later and modify it
+
     .call(d3.axisLeft(y));
 
   // Add Y axis label:
@@ -156,10 +159,38 @@ d3.csv(Scatter).then (function(data) {
     .on("mouseover", showTooltip )
     .on("mousemove", moveTooltip )
     .on("mouseleave", hideTooltip )
+    
+    x.domain([0, 25])
+    svg.select(".myXaxis")
+      .transition()
+      .duration(1500)
+      .attr("opacity", "1")
+      .call(d3.axisBottom(x));
+
+      y.domain([0, 50])
+      svg.select(".myYaxis")
+        .transition()
+        .duration(1500)
+        .attr("opacity", "1")
+        .call(d3.axisLeft(y));
+
+    svg.selectAll("circle")
+    .attr("cx", function (d) { return x(0); } )
+    .attr("cy", function (d) { return y(0); } )
+    .attr("r", function (d) { return z(d.makeormiss); } )
+
+    .transition()
+    .delay(function(d,i){return(i*10)})
+    .duration(1500)
+    .attr("cx", function (d) { return x(d.timer); } )
+      .attr("cy", function (d) { return y(d.shotdistance); } )
+      .attr("r", function (d) { return z(d.makeormiss); } )
+
+    
  
     var legend = svg.append("g")
     .attr("class", "legend")
-    .attr("transform", "translate(" + [750, 600] + ")")
+    .attr("transform", "translate(" + [700, 600] + ")")
  
   legend.append("circle")
     .attr("class", "dot")
@@ -171,7 +202,7 @@ d3.csv(Scatter).then (function(data) {
     legend.select("circle")
       .transition()
       .duration(time)
-      .attr("r", d => flip ? 20 : 10)
+      .attr("r", d => flip ? 13 : 5)
       .on("end", function() {
         flip = !flip;
         pulse(time);
@@ -185,10 +216,10 @@ d3.csv(Scatter).then (function(data) {
     .attr("text-anchor", "middle")
   
   legendLabel.append("text")
-    .text("No. of Staff")
+    .text("Miss To Make")
   legendLabel.append("text")
     .attr("y", 14)
-    .text("Earning Over 140k");
+    .text("Small = Miss Big = Make");
 
     
     // ---------------------------//
@@ -235,12 +266,7 @@ d3.csv(Scatter).then (function(data) {
         .style("font-size", 10)
         .attr('alignment-baseline', 'middle')
 
-    // Legend title
-    // svg.append("text")
-    //   .attr('x', xCircle)
-    //   .attr("y", height - 100 +30)
-    //   .text("(M)")
-    //   .attr("text-anchor", "middle")
+    
 
     // Add one dot in the legend for each name.
     var size = 20
@@ -249,7 +275,7 @@ d3.csv(Scatter).then (function(data) {
       .data(allgroups)
       .enter()
       .append("circle")
-        .attr("cx", 900)
+        .attr("cx", 800)
         .attr("cy", function(d,i){ return 10 + i*(size+5)}) // 100 is where the first dot appears. 25 is the distance between dots
         .attr("r", 7)
         .style("fill", function(d){ return color(d)})
@@ -263,7 +289,7 @@ d3.csv(Scatter).then (function(data) {
       .data(allgroups)
       .enter()
       .append("text")
-        .attr("x", 900 + size*.8)
+        .attr("x", 800 + size*.8)
         .attr("y", function(d,i){ return i * (size + 5) + (size/2)}) // 100 is where the first dot appears. 25 is the distance between dots
         .style("fill", function(d){ return color(d)})
         .text(function(d){ return d})
