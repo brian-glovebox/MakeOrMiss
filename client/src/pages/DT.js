@@ -142,14 +142,16 @@ d3.csv(Scatter).then (function(data) {
     .data(data)
     .enter()
     .append("circle")
+
       .attr("class", function(d) { return "bubbles " + d.teamname })
       .attr("cx", function (d) { return x(d.timer); } )
       .attr("cy", function (d) { return y(d.shotdistance); } )
       .attr("r", function (d) { return z(d.makeormiss); } )
       .style("fill", function (d) { return color(d.teamname); } )
       .attr("stroke", function(d){ return line(d.teamname)})
-      .style("stroke-width", 1)
+      .style("stroke-width", 0.5)
       .attr("opacity", "0.5")
+      
     // -3- Trigger the functions for hover
     .on("mouseover", showTooltip )
     .on("mousemove", moveTooltip )
@@ -171,8 +173,8 @@ d3.csv(Scatter).then (function(data) {
       .enter()
       .append("circle")
         .attr("cx", xCircle)
-        // .attr("cy", function(d){ return height + 24 - z(d) } )
-        .attr("r", function(d){ return z(d) })
+        .attr("cy", function(d){ return height + 24 - z(d) } )
+        // .attr("r", function(d){ return z(d) })
         .style("fill", "none")
         .attr("stroke", "black")
 
