@@ -157,8 +157,40 @@ d3.csv(Scatter).then (function(data) {
     .on("mousemove", moveTooltip )
     .on("mouseleave", hideTooltip )
  
+    var legend = svg.append("g")
+    .attr("class", "legend")
+    .attr("transform", "translate(" + [750, 600] + ")")
+ 
+  legend.append("circle")
+    .attr("class", "dot")
+    .attr("r", 10);
+  
+  var flip = true;
+  
+  function pulse(time) {
+    legend.select("circle")
+      .transition()
+      .duration(time)
+      .attr("r", d => flip ? 20 : 10)
+      .on("end", function() {
+        flip = !flip;
+        pulse(time);
+      })
+  }
+  
+  pulse(3000);
+  
+  var legendLabel = legend.append("g")
+    .attr("transform", "translate(" + [0, -50] + ")")
+    .attr("text-anchor", "middle")
+  
+  legendLabel.append("text")
+    .text("No. of Staff")
+  legendLabel.append("text")
+    .attr("y", 14)
+    .text("Earning Over 140k");
 
-
+    
     // ---------------------------//
     //       LEGEND              //
     // ---------------------------//
