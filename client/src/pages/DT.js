@@ -72,50 +72,59 @@ d3.csv(Scatter).then (function(data) {
   var line = d3.scaleOrdinal()
   .domain(["ATL", "BOS", "BRK", "CHO", "CHI", "CLE", "DAL", "DEN", "DET", "GSW", "HOU", "IND", "LAC", "LAL", "MEM", "MIA", "MIL", "MIN", "NOP", "NYK", "OKC", "ORL", "PHI", "PHO", "POR", "SAC", "SAS", "TOR", "UTA", "WAS"])
   .range(["#C1D32F","#BA9653","#FFFFFF","#00788C","#000000","#041E42","#002B5E","#FEC524","#006BB6","#FDB927","#000000","#FDBB30","#1D428A","#FDB927","#12173F","#F9A01B","#EEE1C6","#236192","#C8102E","#F58426","#EF3B24","#C4CED4","#ED174C","#E56020","#000000","#63727A","#000000","#000000","#00471B","#E31837"])
-
-
-
+  
+  
+  
   // ---------------------------//
   //      TOOLTIP               //
   // ---------------------------//
-
+  
   // -1- Create a tooltip div that is hidden by default:
   var tooltip = d3.select("#BC")
-    .append("div")
-      .style("opacity", 0)
-      .attr("class", "tooltip")
-      .style("background-color", "black")
-      .style("border-radius", "5px")
-      .style("padding", "10px")
-      .style("width", "300px")
-      .style("length", "100px")
-      .style("color", "white")
-
+  .append("div")
+  .style("opacity", 0)
+  .attr("class", "tooltip")
+  .style("background-color", "black")
+  .style("border-radius", "5px")
+  .style("padding", "10px")
+  .style("width", "300px")
+  .style("length", "100px")
+  .style("color", "white")
+  
   // -2- Create 3 functions to show / update (when mouse move but stay on same circle) / hide the tooltip
   var showTooltip = function(d) {
-
+    
+    // var select = function(d){
+    //   // reduce opacity of all groups
+    //   d3.selectAll(".bubbles")
+    //   .mouseover("opacity", 1)
+    //   // expect the one that is hovered
+    //   d3.selectAll("."+d).style("opacity", .7)
+    // }
+    // select();
+    
     tooltip
-      .transition()
-      .duration(2000)
+    .transition()
+    .duration(2000)
     tooltip
-      .style("opacity", 1)
-      .html("Description: " + d.description)
-      .style("left", (d3.mouse(this)[0]+50) + "px")
-      .style("top", (d3.mouse(this)[1]+50) + "px")
+    .style("opacity", 1)
+    .html("Description: " + d.description)
+    .style("left", (d3.mouse(this)[0]+50) + "px")
+    .style("top", (d3.mouse(this)[1]+50) + "px")
   }
   var moveTooltip = function(d) {
     tooltip
-      .style("left", (d3.mouse(this)[0]+50) + "px")
-      .style("top", (d3.mouse(this)[1]+50) + "px")
+    .style("left", (d3.mouse(this)[0]+50) + "px")
+    .style("top", (d3.mouse(this)[1]+50) + "px")
   }
   var hideTooltip = function(d) {
     tooltip
-      .transition()
-      .duration(5000)
-      .style("opacity", 0)
+    .transition()
+    .duration(3000)
+    .style("opacity", 0)
   }
-
-
+  
+  
   // ---------------------------//
   //       HIGHLIGHT GROUP      //
   // ---------------------------//
@@ -130,7 +139,7 @@ d3.csv(Scatter).then (function(data) {
 
   // And when it is not hovered anymore
   var noHighlight = function(d){
-    d3.selectAll(".bubbles").style("opacity", 0.5)
+    d3.selectAll(".bubbles").style("opacity", 0.6)
   }
 
 
@@ -153,7 +162,7 @@ d3.csv(Scatter).then (function(data) {
       .style("fill", function (d) { return color(d.teamname); } )
       .attr("stroke", function(d){ return line(d.teamname)})
       .style("stroke-width", 0.5)
-      .attr("opacity", "0.5")
+      .attr("opacity", "0.7")
       
     // -3- Trigger the functions for hover
     .on("mouseover", showTooltip )
