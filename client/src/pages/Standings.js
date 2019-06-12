@@ -216,49 +216,37 @@ class Standings extends Component {
   render() {
     return ( <div className="windowBox" id="standings">
       <div className={this.state.view}>
-        <header>
-          <div className="abs-left">
-            <Toggle
-              clickHandler={this.toggleList}
-              text="List" icon="list"
-              active={this.state.view === 'list'}
-            />
-            <Toggle
-              clickHandler={this.toggleGrid}
-              text="Grid" icon="th"
-              active={this.state.view === 'grid'}
-            />
-          </div>
+        <header id="standingsHeader">
           <div className="abs-right">
-            <Toggle
+            <Toggle className="toggle"
               clickHandler={this.toggleSort}
               text={this.state.order === 'asc' ? 'Ascending' : 'Descending'}
               icon={this.state.order === 'asc' ? 'angle-up' : 'angle-down'}
               active={this.state.sortingMethod === 'chronological'}
             />
-            <Toggle
+            <Toggle className="toggle"
               clickHandler={this.sortShuffle}
               text="Shuffle" icon="random"
               active={this.state.sortingMethod === 'shuffle'}
             />
-            <Toggle
+            <Toggle className="toggle"
               clickHandler={this.sortRotate}
               text="Rotate" icon="refresh"
               active={this.state.sortingMethod === 'rotate'}
             />
-              <Toggle
+              <Toggle className="toggle"
               clickHandler={this.invertSort}
               text={this.state.order === 'asc' ? 'Invert' : 'Revert'}
               icon={this.state.order === 'asc' ? 'angle-up' : 'angle-down'}
               active={this.state.sortingMethod === 'chronological'}
             />
-              <Toggle
+              <Toggle className="toggle"
               clickHandler={this.evenSort}
               text={this.state.order === 'asc' ? '.500' : 'Revert'}
               icon={this.state.order === 'asc' ? 'angle-up' : 'angle-down'}
               active={this.state.sortingMethod === 'chronological'}
             />
-              <Toggle
+              <Toggle className="toggle"
               clickHandler={this.randomSort}
               text={this.state.order === 'asc' ? 'Random' : 'Revert'}
               icon={this.state.order === 'asc' ? 'angle-up' : 'angle-down'}
@@ -281,6 +269,24 @@ class Standings extends Component {
             { this.renderWesternC() }
           </FlipMove>
         </div>
+        <div id="standingsLabels">
+        <p>1st</p>
+        <p>2nd</p>
+        <p>3rd</p>
+        <p>4th</p>
+        <p>5th</p>
+        <p>6th</p>
+        <p>7th</p>
+        <p>8th</p>
+        <p className="altColor">9th</p>
+        <p className="altColor">10th</p>
+        <p className="altColor">11th</p>
+        <p className="altColor">12th</p>
+        <p className="altColor">13th</p>
+        <p className="altColor">14th</p>
+        <p className="altColor">15th</p>
+
+        </div>
         <div className= "dvBox">
           <FlipMove
             staggerDurationBy="30"
@@ -294,6 +300,10 @@ class Standings extends Component {
         </div>
         </div>
         
+      </div>
+      <div id= "stb" className="textBox">
+      <h4>Standings</h4>
+      <h7>Re-imagine the standings based on each teams’ record in games decided by 3 points or less and how adjusting the results from those games could affect the end of the season placement.</h7>
       </div>
 </div>
     );
