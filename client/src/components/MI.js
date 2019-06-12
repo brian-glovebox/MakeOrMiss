@@ -1,19 +1,23 @@
 import React from "react"
+import {Link} from "react-router-dom";
+import { checkPropTypes } from "prop-types";
 
 ///////////////////
 // MenuItem      //
 ///////////////////
 function MenuItem(props) {
     return (
-      <div 
+      <Link
         className='menu-item'
         id={ props.item.text }
-        onClick={ props.handleClick(props.item.text) }
+        to={ props.item.add}
+    
       >
         { props.item.text.toUpperCase() }
-      </div>
+      </Link>
     )
   }
 
 export default MenuItem; 
+
 

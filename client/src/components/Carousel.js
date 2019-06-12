@@ -3,19 +3,19 @@ import { UncontrolledCarousel } from 'reactstrap';
 
 const items = [
   {
-    src:'https://i.imgur.com/dwPiLb5.png',
+    src:'https://i.imgur.com/Q73uaXI.png',
   },
   {
-    src: 'https://i.imgur.com/FrFYmhl.jpg',
+    src: 'https://i.imgur.com/eY9hVz9.png',
   },
   {
-    src: 'https://i.imgur.com/BVFBg6N.jpg',
+    src: 'https://i.imgur.com/OH0H2lv.png',
   },
   {
-    src: 'https://i.imgur.com/m7rWWZm.jpg',
+    src: 'https://i.imgur.com/2B6Rt8c.png',
   },
   {
-    src: 'https://i.imgur.com/i7kP4Is.jpg',
+    src: 'https://i.imgur.com/kBklVWf.png',
   }
 ];
 
