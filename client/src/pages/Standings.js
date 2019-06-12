@@ -295,7 +295,7 @@ class Standings extends Component {
         </div>
         
       </div>
-  </div>
+</div>
     );
   }
 };

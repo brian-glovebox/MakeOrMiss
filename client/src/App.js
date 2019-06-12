@@ -8,6 +8,9 @@ import Standings from "./pages/Standings";
 import Wins from "./pages/Wins";
 import CustomNav from "./components/Nav"
 import Navbar from "./components/Navbar";
+import momLogo from "./assets/momLogo.png"
+import MenuContainer from "./components/MC"
+import { Col, Row } from 'reactstrap';
 // import { TopBar } from '../src/components/TopBar';
 // import { Main } from '../src/components/Main';
 // import nba from 'nba';
@@ -15,17 +18,23 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <Router>
-    <div>
-      <CustomNav />
-      
-      <Switch>
+
+<Row>
+          <Col md="2"><div className="appCol">
+
+<img id="momLogo" src={momLogo} />
+
+  </div></Col>
+          <Col md="8"> <div className="appColMain">   <Switch>
         <Route exact path="/" render ={(props) => <Main {...props}/>}/>
         <Route exact path="/standings" render ={(props) => <Standings {...props}/>}/>
         <Route exact path="/wins" render ={(props) => <Wins {...props}/>}/>
         <Route exact path="/dt" render ={(props) => <DT {...props}/>}/>
         <Route exact path="/team" render ={(props) => <Team {...props}/>}/>
-      </Switch>
-    </div>
+      </Switch></div></Col>
+          <Col md="2">  <div className="appCol" id="appMenu">  <MenuContainer /></div></Col>
+          
+        </Row>
     </Router>
 
   );
