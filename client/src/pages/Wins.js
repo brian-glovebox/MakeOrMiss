@@ -295,7 +295,7 @@ function mouseout(d)
       
       <div id= "wtb" className="textBox">
       <h4>Wins</h4>
-      <h7>This visualization graphs each teams potential end of the season win total. Hover on the team name to see all potential wins or hover on the win count to see all potential teams.</h7>
+      <h7 id="text">This visualization graphs each teams potential end of the season win total. Hover on the team name to see all potential wins or hover on the win count to see all potential teams.</h7>
       </div>
       </div>
     )
