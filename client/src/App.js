@@ -7,6 +7,8 @@ import Shots from "./pages/Shots";
 import Standings from "./pages/Standings";
 import Wins from "./pages/Wins";
 import CustomNav from "./components/Nav"
+import { UncontrolledCarousel } from 'reactstrap';
+
 import Navbar from "./components/Navbar";
 import momLogo from "./assets/momLogo.png"
 import MenuContainer from "./components/MC"
