@@ -13,11 +13,12 @@ class MenuContainer extends React.Component {
         activeItemPosition: 0,
         activeItemColor: '',
         menuItems: [
-          { text: 'Home' },
-          { text: 'Standings' },
-          { text: 'Wins' },
-          { text: 'Distance/Time' },
-          { text: 'Bubbles' },
+          { text: 'Home', add:'/' },
+          { text: 'Standings', add:'/standings' },
+          { text: 'Wins', add: '/wins' },
+          { text: 'Distance/Time', add: '/dt' },
+          { text: 'Bubbles', add:'/team'},
+          { text: 'About', add: '/about'}
         ],
       }
       

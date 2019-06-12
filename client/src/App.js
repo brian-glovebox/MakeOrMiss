@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Main from "./pages/Main";
 import Team from "./pages/Team";
 import DT from "./pages/DT";
+import About from "./pages/About"
 import Shots from "./pages/Shots";
 import Standings from "./pages/Standings";
 import Wins from "./pages/Wins";
@@ -33,6 +34,7 @@ function App() {
         <Route exact path="/wins" render ={(props) => <Wins {...props}/>}/>
         <Route exact path="/dt" render ={(props) => <DT {...props}/>}/>
         <Route exact path="/team" render ={(props) => <Team {...props}/>}/>
+        <Route exact path="/about" render ={(props) => <About {...props}/>}/>
       </Switch></div></Col>
           <Col md="2">  <div className="appCol" id="appMenu">  <MenuContainer /></div></Col>
           

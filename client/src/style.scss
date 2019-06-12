@@ -327,6 +327,11 @@ html, body {
   &.active {
     box-shadow: 0 2px 3px hsla(0, 0, 0, 0.7);
   }
+
+  &:hover {
+    color:black; 
+    text-decoration: none;
+  }
  
   &:nth-of-type(1) {
     background: $primarycolor;
@@ -342,6 +347,9 @@ html, body {
   }
   &:nth-of-type(5) {
     background: darken($primarycolor, 20%);
+  }
+  &:nth-of-type(6) {
+    background: darken($primarycolor, 25%);
   }
 }
 
@@ -401,6 +409,10 @@ float: left
   margin-top: -530px; 
 }
 
+#about {
+  margin-top: 50px
+}
+
 #main{
   max-width: 75%;
   height: 50%;
@@ -443,4 +455,3 @@ li {
 #ttb{
   margin-top:-20px
 }
-
