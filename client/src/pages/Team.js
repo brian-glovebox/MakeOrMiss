@@ -49,6 +49,7 @@ class Team extends React.Component {
         .style("border-width", "2px")
         .style("border-radius", "5px")
         .style("padding", "5px")
+        .style("border-color", "black")
     
       // Three function that change the tooltip when user hover / move / leave a cell
       var mouseover = function(d) {

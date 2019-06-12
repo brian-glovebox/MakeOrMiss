@@ -28,10 +28,11 @@ d3.csv(Scatter).then (function(data) {
 
   // Add X axis
   var x = d3.scaleLinear()
-    .domain([0, 25])
+    .domain([0, 0])
     .range([0, width]);
   svg.append("g")
     .attr("transform", "translate(0," + height + ")")
+    .attr("class", "myXaxis")   // Note that here we give a class to the X axis, to be able to call it later and modify it
     .call(d3.axisBottom(x).ticks(5));
 
   // Add X axis label:
@@ -43,9 +44,11 @@ d3.csv(Scatter).then (function(data) {
 
   // Add Y axis
   var y = d3.scaleLinear()
-    .domain([1, 50])
+    .domain([0, 0])
     .range([height, 0]);
   svg.append("g")
+  .attr("class", "myYaxis")   // Note that here we give a class to the X axis, to be able to call it later and modify it
+
     .call(d3.axisLeft(y));
 
   // Add Y axis label:
@@ -69,50 +72,59 @@ d3.csv(Scatter).then (function(data) {
   var line = d3.scaleOrdinal()
   .domain(["ATL", "BOS", "BRK", "CHO", "CHI", "CLE", "DAL", "DEN", "DET", "GSW", "HOU", "IND", "LAC", "LAL", "MEM", "MIA", "MIL", "MIN", "NOP", "NYK", "OKC", "ORL", "PHI", "PHO", "POR", "SAC", "SAS", "TOR", "UTA", "WAS"])
   .range(["#C1D32F","#BA9653","#FFFFFF","#00788C","#000000","#041E42","#002B5E","#FEC524","#006BB6","#FDB927","#000000","#FDBB30","#1D428A","#FDB927","#12173F","#F9A01B","#EEE1C6","#236192","#C8102E","#F58426","#EF3B24","#C4CED4","#ED174C","#E56020","#000000","#63727A","#000000","#000000","#00471B","#E31837"])
-
-
-
+  
+  
+  
   // ---------------------------//
   //      TOOLTIP               //
   // ---------------------------//
-
+  
   // -1- Create a tooltip div that is hidden by default:
   var tooltip = d3.select("#BC")
-    .append("div")
-      .style("opacity", 0)
-      .attr("class", "tooltip")
-      .style("background-color", "black")
-      .style("border-radius", "5px")
-      .style("padding", "10px")
-      .style("width", "300px")
-      .style("length", "100px")
-      .style("color", "white")
-
+  .append("div")
+  .style("opacity", 0)
+  .attr("class", "tooltip")
+  .style("background-color", "black")
+  .style("border-radius", "5px")
+  .style("padding", "10px")
+  .style("width", "300px")
+  .style("length", "100px")
+  .style("color", "white")
+  
   // -2- Create 3 functions to show / update (when mouse move but stay on same circle) / hide the tooltip
   var showTooltip = function(d) {
-
+    
+    // var select = function(d){
+    //   // reduce opacity of all groups
+    //   d3.selectAll(".bubbles")
+    //   .mouseover("opacity", 1)
+    //   // expect the one that is hovered
+    //   d3.selectAll("."+d).style("opacity", .7)
+    // }
+    // select();
+    
     tooltip
-      .transition()
-      .duration(2000)
+    .transition()
+    .duration(2000)
     tooltip
-      .style("opacity", 1)
-      .html("Description: " + d.description)
-      .style("left", (d3.mouse(this)[0]+50) + "px")
-      .style("top", (d3.mouse(this)[1]+50) + "px")
+    .style("opacity", 1)
+    .html("Description: " + d.description)
+    .style("left", (d3.mouse(this)[0]+50) + "px")
+    .style("top", (d3.mouse(this)[1]+50) + "px")
   }
   var moveTooltip = function(d) {
     tooltip
-      .style("left", (d3.mouse(this)[0]+50) + "px")
-      .style("top", (d3.mouse(this)[1]+50) + "px")
+    .style("left", (d3.mouse(this)[0]+50) + "px")
+    .style("top", (d3.mouse(this)[1]+50) + "px")
   }
   var hideTooltip = function(d) {
     tooltip
-      .transition()
-      .duration(5000)
-      .style("opacity", 0)
+    .transition()
+    .duration(3000)
+    .style("opacity", 0)
   }
-
-
+  
+  
   // ---------------------------//
   //       HIGHLIGHT GROUP      //
   // ---------------------------//
@@ -127,7 +139,7 @@ d3.csv(Scatter).then (function(data) {
 
   // And when it is not hovered anymore
   var noHighlight = function(d){
-    d3.selectAll(".bubbles").style("opacity", 0.5)
+    d3.selectAll(".bubbles").style("opacity", 0.6)
   }
 
 
@@ -142,21 +154,83 @@ d3.csv(Scatter).then (function(data) {
     .data(data)
     .enter()
     .append("circle")
+
       .attr("class", function(d) { return "bubbles " + d.teamname })
       .attr("cx", function (d) { return x(d.timer); } )
       .attr("cy", function (d) { return y(d.shotdistance); } )
       .attr("r", function (d) { return z(d.makeormiss); } )
       .style("fill", function (d) { return color(d.teamname); } )
       .attr("stroke", function(d){ return line(d.teamname)})
-      .style("stroke-width", 1)
-      .attr("opacity", "0.5")
+      .style("stroke-width", 0.5)
+      .attr("opacity", "0.7")
+      
     // -3- Trigger the functions for hover
     .on("mouseover", showTooltip )
     .on("mousemove", moveTooltip )
     .on("mouseleave", hideTooltip )
+    
+    x.domain([0, 25])
+    svg.select(".myXaxis")
+      .transition()
+      .duration(1500)
+      .attr("opacity", "1")
+      .call(d3.axisBottom(x));
+
+      y.domain([0, 50])
+      svg.select(".myYaxis")
+        .transition()
+        .duration(1500)
+        .attr("opacity", "1")
+        .call(d3.axisLeft(y));
+
+    svg.selectAll("circle")
+    .attr("cx", function (d) { return x(0); } )
+    .attr("cy", function (d) { return y(0); } )
+    .attr("r", function (d) { return z(d.makeormiss); } )
+
+    .transition()
+    .delay(function(d,i){return(i*10)})
+    .duration(1500)
+    .attr("cx", function (d) { return x(d.timer); } )
+      .attr("cy", function (d) { return y(d.shotdistance); } )
+      .attr("r", function (d) { return z(d.makeormiss); } )
+
+    
  
+    var legend = svg.append("g")
+    .attr("class", "legend")
+    .attr("transform", "translate(" + [700, 600] + ")")
+ 
+  legend.append("circle")
+    .attr("class", "dot")
+    .attr("r", 10);
+  
+  var flip = true;
+  
+  function pulse(time) {
+    legend.select("circle")
+      .transition()
+      .duration(time)
+      .attr("r", d => flip ? 13 : 5)
+      .on("end", function() {
+        flip = !flip;
+        pulse(time);
+      })
+  }
+  
+  pulse(3000);
+  
+  var legendLabel = legend.append("g")
+    .attr("transform", "translate(" + [0, -50] + ")")
+    .attr("text-anchor", "middle")
+  
+  legendLabel.append("text")
+    .text("Miss To Make")
+  legendLabel.append("text")
+    .attr("y", 14)
+    .text("Small = Miss Big = Make");
 
-
+    
     // ---------------------------//
     //       LEGEND              //
     // ---------------------------//
@@ -171,8 +245,8 @@ d3.csv(Scatter).then (function(data) {
       .enter()
       .append("circle")
         .attr("cx", xCircle)
-        // .attr("cy", function(d){ return height + 24 - z(d) } )
-        .attr("r", function(d){ return z(d) })
+        .attr("cy", function(d){ return height + 24 - z(d) } )
+        // .attr("r", function(d){ return z(d) })
         .style("fill", "none")
         .attr("stroke", "black")
 
@@ -201,12 +275,7 @@ d3.csv(Scatter).then (function(data) {
         .style("font-size", 10)
         .attr('alignment-baseline', 'middle')
 
-    // Legend title
-    // svg.append("text")
-    //   .attr('x', xCircle)
-    //   .attr("y", height - 100 +30)
-    //   .text("(M)")
-    //   .attr("text-anchor", "middle")
+    
 
     // Add one dot in the legend for each name.
     var size = 20
@@ -215,7 +284,7 @@ d3.csv(Scatter).then (function(data) {
       .data(allgroups)
       .enter()
       .append("circle")
-        .attr("cx", 700)
+        .attr("cx", 800)
         .attr("cy", function(d,i){ return 10 + i*(size+5)}) // 100 is where the first dot appears. 25 is the distance between dots
         .attr("r", 7)
         .style("fill", function(d){ return color(d)})
@@ -229,7 +298,7 @@ d3.csv(Scatter).then (function(data) {
       .data(allgroups)
       .enter()
       .append("text")
-        .attr("x", 700 + size*.8)
+        .attr("x", 800 + size*.8)
         .attr("y", function(d,i){ return i * (size + 5) + (size/2)}) // 100 is where the first dot appears. 25 is the distance between dots
         .style("fill", function(d){ return color(d)})
         .text(function(d){ return d})
