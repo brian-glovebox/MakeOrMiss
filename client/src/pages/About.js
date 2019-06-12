@@ -12,7 +12,7 @@ class About extends Component {
   render() {
     return (
       <div className="windowBox" id="about">
-      <h3>About Make or Miss</h3>
+      <h3>"It's a Make or Miss League"</h3>
       <br/>
       
       <br/>
