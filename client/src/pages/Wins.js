@@ -186,6 +186,20 @@ var link = svg.append('g').attr('class', 'links').selectAll(".link")
     .attr('stroke', function(d) { return get_color(d.inner.name); })
     .attr('stroke-width', link_width);
 
+// tool tip
+
+var Tooltip = d3.select("#wins")
+.append("div")
+.style("opacity", 0)
+.attr("class", "tooltip")
+.style("background-color", "black")
+.style("color", "white")
+.style("border", "solid")
+.style("border-width", "2px")
+.style("border-radius", "5px")
+.style("padding", "5px")
+.style("border-color", "black")
+
 // outer nodes
 
 var onode = svg.append('g').selectAll(".outer_node")
@@ -276,7 +290,14 @@ function mouseout(d)
 
   render() {
     return (
-      <div className="windowBox" id="wins"></div>
+      <div className="windowBox">
+      <div id="wins"></div>
+      
+      <div id= "wtb" className="textBox">
+      <h4>Wins</h4>
+      <h7>This visualization graphs each teams potential end of the season win total. Hover on the team name to see all potential wins or hover on the win count to see all potential teams.</h7>
+      </div>
+      </div>
     )
   }
 

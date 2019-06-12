@@ -154,6 +154,15 @@ Note: Beware of modifying this element as it can break the animations - you shou
     }
   }
 
+  #standingsHeader {
+    margin: 20px 0 0 200px;
+
+  }
+.button-toggle {
+color: white;
+background: black; 
+font-size: 12pt
+}
 
 .lgBox {
   position: relative; 
@@ -170,10 +179,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
   position: absolute;
   min-width: 100vw;
 }
-  
-
-
-
 
 
 // ConceptMap
@@ -300,7 +305,7 @@ html, body {
   // position: fixed;
   transform: translate(0);
   margin: 50px auto;
-  width: 180px;
+  width: 165px;
 }
 
 .menu-item,
@@ -314,7 +319,7 @@ html, body {
   color: $white;
   cursor: pointer;
   display: flex;
-  font-size: 16px;
+  font-size: 14px;
   justify-content: center;
   letter-spacing: 4px;
   text-align: center;
@@ -404,3 +409,38 @@ float: left
   box-shadow:10px 10px 10px black;  
 
 }
+
+li {
+  margin: 5px 0;  
+}
+
+#standingsLabels {
+  float: left; 
+  color: white; 
+  p {
+    margin: 12pt 0pt 12pt 30pt; 
+    padding: 12pt 0; 
+  }
+}
+
+.altColor {
+  color: black
+}
+
+.textBox {
+  
+  margin-bottom: 40px; 
+}
+
+#stb {
+  margin-top: 1100px;
+}
+
+#wtb {
+  margin-top: -100px;
+}
+
+#ttb{
+  margin-top:-20px
+}
+
