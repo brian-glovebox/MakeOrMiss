@@ -1,6 +1,7 @@
 import React from "react";
 import * as d3 from 'd3';
 import Scatter from '../assets/Scatter.csv'
+import Scatter2 from '../assets/Scatter2.csv'
 
 class DT extends React.Component {
 
@@ -139,7 +140,7 @@ d3.csv(Scatter).then (function(data) {
 
   // And when it is not hovered anymore
   var noHighlight = function(d){
-    d3.selectAll(".bubbles").style("opacity", 0.6)
+    d3.selectAll(".bubbles").style("opacity", 0.9)
   }
 
 
@@ -161,8 +162,8 @@ d3.csv(Scatter).then (function(data) {
       .attr("r", function (d) { return z(d.makeormiss); } )
       .style("fill", function (d) { return color(d.teamname); } )
       .attr("stroke", function(d){ return line(d.teamname)})
-      .style("stroke-width", 0.5)
-      .attr("opacity", "0.7")
+      .style("stroke-width", ".9")
+      .attr("opacity", ".9")
       
     // -3- Trigger the functions for hover
     .on("mouseover", showTooltip )
@@ -199,7 +200,7 @@ d3.csv(Scatter).then (function(data) {
  
     var legend = svg.append("g")
     .attr("class", "legend")
-    .attr("transform", "translate(" + [700, 600] + ")")
+    .attr("transform", "translate(" + [700, 50] + ")")
  
   legend.append("circle")
     .attr("class", "dot")
@@ -211,7 +212,7 @@ d3.csv(Scatter).then (function(data) {
     legend.select("circle")
       .transition()
       .duration(time)
-      .attr("r", d => flip ? 13 : 5)
+      .attr("r", d => flip ? 14 : 5)
       .on("end", function() {
         flip = !flip;
         pulse(time);
@@ -225,10 +226,10 @@ d3.csv(Scatter).then (function(data) {
     .attr("text-anchor", "middle")
   
   legendLabel.append("text")
-    .text("Miss To Make")
+    .text("Shot Legend")
   legendLabel.append("text")
     .attr("y", 14)
-    .text("Small = Miss Big = Make");
+    .text("Make Or Miss");
 
     
     // ---------------------------//
@@ -306,6 +307,46 @@ d3.csv(Scatter).then (function(data) {
         .style("alignment-baseline", "middle")
         .on("mouseover", highlight)
         .on("mouseleave", noHighlight)
+
+        // function updateData() {
+
+        //   // Get the data again
+        //   d3.csv("Scatter2").then (function(error, data) {
+        //       data.forEach(function(d) {
+        //           d.timer = +d.timer;
+        //           d.shotdistance = +d.shotdistance;
+        //           d.makeormiss = +d.makeormiss;
+        //       });
+      
+        //       // Scale the range of the data again 
+        //       x.domain("cx", function (d) { return x(d.timer); } )
+        //       y.domain("cy", function (d) { return y(d.shotdistance); } )
+        //       z.domain ("r", function (d) { return z(d.makeormiss); } )
+      
+        //   // Select the section we want to apply our changes to
+        //   var svg = d3.select("#BC").transition();
+      
+        //   // Make the changes
+        //       svg.select(".bubbles")   // change the line
+        //           .duration(1500)
+        //           .attr("r", function (d) { return z(d.makeormiss); } )
+        //       svg.select("x") // change the x axis
+        //           .duration(1500)
+        //           .attr("cx", function (d) { return x(d.timer); } )
+        //           .call(d3.axisBottom(x).ticks(5));
+        //           svg.select("y") // change the y axis
+        //           .duration(1500)
+        //           .attr("cy", function (d) { return y(d.shotdistance); } )
+        //           .call(d3.axisLeft(y));
+
+        //           svg.select(".bubble")   // change the line
+        //           .duration(1500)
+        //           .attr("cx", function (d) { return x(d.timer); } )
+        //           .attr("cy", function (d) { return y(d.shotdistance); } )
+        //           .attr("r", function (d) { return z(d.makeormiss); } )
+      
+        //   });
+      // }
   })
 }
 
@@ -316,6 +357,7 @@ componentDidMount(){
 render(){
   return(
     <div className="windowBox" id="BC"></div>
+   
   )
 }
 
