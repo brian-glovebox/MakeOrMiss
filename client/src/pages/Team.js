@@ -8,8 +8,8 @@ class Team extends React.Component {
 
     CB(){
       // set the dimensions and margins of the graph
-    var width = 1200
-    var height = 800
+    var width = 2000
+    var height = 2000
     
     // append the svg object to the body of the page
     var svg = d3.select("#team")
