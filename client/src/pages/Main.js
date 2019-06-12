@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Carousel from '../components/Carousel'
 
 class Main extends Component {
   // Initialize this.state.books as an empty array
@@ -11,11 +12,7 @@ class Main extends Component {
   render() {
     return (
       <div className="windowBox" id="main">
-    <h1>Main Page</h1>
-    <br/>
-    <h2>This is the main page</h2>
-    <br/>
-    <p>Main will go here</p>
+    <Carousel />
   </div>
       
     )
