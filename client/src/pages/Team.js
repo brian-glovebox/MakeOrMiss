@@ -1,7 +1,8 @@
 import React from "react";
 import * as d3 from 'd3';
 import Clutch from '../assets/Clutch.csv'
-
+import "../style.scss"
+import "../teamStyle.scss"
 
 class Team extends React.Component {
 

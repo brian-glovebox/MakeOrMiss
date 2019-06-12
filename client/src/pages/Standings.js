@@ -3,6 +3,9 @@ import shuffle from 'lodash/shuffle';
 import throttle from 'lodash/throttle';
 import FlipMove from 'react-flip-move';
 import classNames from 'classnames';
+import "../style.scss"
+import "../teamStyle.scss"
+
 
 const Toggle = ({clickHandler, text, icon, active, large}) => {
   const buttonClass = classNames({
@@ -22,39 +25,39 @@ const Toggle = ({clickHandler, text, icon, active, large}) => {
 };
 
 const easternC = [
-  { id: 'a', name: 'Milwaukee Bucks', conference: 'E', recordW:60, recordL:22, threeW: 5, threeL: 6},
-  { id: 'b', name: 'Toronto Raptors', conference: 'E', recordW:58, recordL:24, threeW: 11, threeL: 7},
-  { id: 'c', name: 'Philadelphia 76ers', conference: 'E', recordW:51, recordL:31, threeW: 10, threeL: 8},
-  { id: 'd', name: 'Boston Celtics', conference: 'E', recordW:49, recordL:33, threeW: 5, threeL: 6},
-  { id: 'e', name: 'Indiana Pacers', conference: 'E', recordW:48, recordL:34, threeW: 6, threeL: 6},
-  { id: 'f', name: 'Brooklyn Nets', conference: 'E', recordW:42, recordL:40, threeW: 12, threeL: 8},
-  { id: 'g', name: 'Orlando Magic', conference: 'E', recordW:42, recordL:40, threeW: 5, threeL: 6},
-  { id: 'h', name: 'Detroit Piston', conference: 'E', recordW:41, recordL:41, threeW: 6, threeL: 9},
-  { id: 'i', name: 'Charlotte Hornets', conference: 'E', recordW:39, recordL:43, threeW: 6, threeL: 10},
-  { id: 'j', name: 'Miami Heat', conference: 'E', recordW:39, recordL:43, threeW: 6, threeL: 9},
-  { id: 'k', name: 'Washington Wizards', conference: 'E', recordW:32, recordL:50, threeW: 5, threeL: 6},
-  { id: 'l', name: 'Atlanta Hawks', conference: 'E', recordW:29, recordL:53, threeW: 9, threeL: 6},
-  { id: 'm', name: 'Chicago Bulls', conference: 'E', recordW:22, recordL:60, threeW: 8, threeL: 8},
-  { id: 'n', name: 'Cleveland Cavaliers', conference: 'E', recordW:19, recordL:63, threeW: 5, threeL: 4},
-  { id: 'o', name: 'New York Knicks', conference: 'E', recordW:17, recordL:65, threeW: 4, threeL: 7}, 
+  { id: 'MIL', name: 'Milwaukee Bucks', conference: 'E', recordW:60, recordL:22, threeW: 5, threeL: 6},
+  { id: 'TOR', name: 'Toronto Raptors', conference: 'E', recordW:58, recordL:24, threeW: 11, threeL: 7},
+  { id: 'PHI', name: 'Philadelphia 76ers', conference: 'E', recordW:51, recordL:31, threeW: 10, threeL: 8},
+  { id: 'BOS', name: 'Boston Celtics', conference: 'E', recordW:49, recordL:33, threeW: 5, threeL: 6},
+  { id: 'IND', name: 'Indiana Pacers', conference: 'E', recordW:48, recordL:34, threeW: 6, threeL: 6},
+  { id: 'BRK', name: 'Brooklyn Nets', conference: 'E', recordW:42, recordL:40, threeW: 12, threeL: 8},
+  { id: 'ORL', name: 'Orlando Magic', conference: 'E', recordW:42, recordL:40, threeW: 5, threeL: 6},
+  { id: 'DET', name: 'Detroit Piston', conference: 'E', recordW:41, recordL:41, threeW: 6, threeL: 9},
+  { id: 'CHO', name: 'Charlotte Hornets', conference: 'E', recordW:39, recordL:43, threeW: 6, threeL: 10},
+  { id: 'MIA', name: 'Miami Heat', conference: 'E', recordW:39, recordL:43, threeW: 6, threeL: 9},
+  { id: 'WAS', name: 'Washington Wizards', conference: 'E', recordW:32, recordL:50, threeW: 5, threeL: 6},
+  { id: 'ATL', name: 'Atlanta Hawks', conference: 'E', recordW:29, recordL:53, threeW: 9, threeL: 6},
+  { id: 'CHI', name: 'Chicago Bulls', conference: 'E', recordW:22, recordL:60, threeW: 8, threeL: 8},
+  { id: 'CLE', name: 'Cleveland Cavaliers', conference: 'E', recordW:19, recordL:63, threeW: 5, threeL: 4},
+  { id: 'NYK', name: 'New York Knicks', conference: 'E', recordW:17, recordL:65, threeW: 4, threeL: 7}, 
 ]
 
 const westernC = [
-  { id: 'a', name: 'Golden State Warriors', conference: 'W', recordW:'57', recordL:'25', threeW: '7', threeL: '7'},
-  { id: 'b', name: 'Denver Nuggets', conference: 'W', recordW:'54', recordL:'28', threeW: '13', threeL: '3'},
-  { id: 'c', name: 'Portland Trailblazers', conference: 'W', recordW:'53', recordL:'29', threeW: '4', threeL: '6'},
-  { id: 'd', name: 'Houston Rockets', conference: 'W', recordW:'53', recordL:'29', threeW: '5', threeL: '7'},
-  { id: 'e', name: 'Utah Jazz', conference: 'W', recordW:'50', recordL:'32', threeW: '0', threeL: '7'},
-  { id: 'f', name: 'Oklahoma City Thunder', conference: 'W', recordW:'49', recordL:'33', threeW: '6', threeL: '7'},
-  { id: 'g', name: 'San Antonio Spurs', conference: 'W', recordW:'48', recordL:'34', threeW: '7', threeL: '4'},
-  { id: 'h', name: 'Los Angeles Clippers', conference: 'W', recordW:'48', recordL:'34', threeW: '6', threeL: '2'},
-  { id: 'i', name: 'Sacramento Kings', conference: 'W', recordW:'39', recordL:'43', threeW: '6', threeL: '7'},
-  { id: 'j', name: 'Los Angeles Lakers', conference: 'W', recordW:'37', recordL:'45', threeW: '5', threeL: '4'},
-  { id: 'k', name: 'Minnesota Timberwolves', conference: 'W', recordW:'36', recordL:'46', threeW: '8', threeL: '5'},
-  { id: 'l', name: 'Memphis Grizzles', conference: 'W', recordW:'33', recordL:'49', threeW: '6', threeL: '9'},
-  { id: 'm', name: 'New Orleans Pelicans', conference: 'W', recordW:'33', recordL:'49', threeW: '4', threeL: '6'},
-  { id: 'n', name: 'Dallas Mavericks', conference: 'W', recordW:'33', recordL:'49', threeW: '7', threeL: '7'},
-  { id: 'o', name: 'Phoenix Suns', conference: 'W', recordW:'19', recordL:'63', threeW: '5', threeL: '5'}, 
+  { id: 'GSW', name: 'Golden State Warriors', conference: 'W', recordW:'57', recordL:'25', threeW: '7', threeL: '7'},
+  { id: 'DEN', name: 'Denver Nuggets', conference: 'W', recordW:'54', recordL:'28', threeW: '13', threeL: '3'},
+  { id: 'POR', name: 'Portland Trailblazers', conference: 'W', recordW:'53', recordL:'29', threeW: '4', threeL: '6'},
+  { id: 'HOU', name: 'Houston Rockets', conference: 'W', recordW:'53', recordL:'29', threeW: '5', threeL: '7'},
+  { id: 'UTA', name: 'Utah Jazz', conference: 'W', recordW:'50', recordL:'32', threeW: '0', threeL: '7'},
+  { id: 'OKC', name: 'Oklahoma City Thunder', conference: 'W', recordW:'49', recordL:'33', threeW: '6', threeL: '7'},
+  { id: 'SAS', name: 'San Antonio Spurs', conference: 'W', recordW:'48', recordL:'34', threeW: '7', threeL: '4'},
+  { id: 'LAC', name: 'Los Angeles Clippers', conference: 'W', recordW:'48', recordL:'34', threeW: '6', threeL: '2'},
+  { id: 'SAC', name: 'Sacramento Kings', conference: 'W', recordW:'39', recordL:'43', threeW: '6', threeL: '7'},
+  { id: 'LAL', name: 'Los Angeles Lakers', conference: 'W', recordW:'37', recordL:'45', threeW: '5', threeL: '4'},
+  { id: 'MIN', name: 'Minnesota Timberwolves', conference: 'W', recordW:'36', recordL:'46', threeW: '8', threeL: '5'},
+  { id: 'MEM', name: 'Memphis Grizzles', conference: 'W', recordW:'33', recordL:'49', threeW: '6', threeL: '9'},
+  { id: 'NOP', name: 'New Orleans Pelicans', conference: 'W', recordW:'33', recordL:'49', threeW: '4', threeL: '6'},
+  { id: 'DAL', name: 'Dallas Mavericks', conference: 'W', recordW:'33', recordL:'49', threeW: '7', threeL: '7'},
+  { id: 'PHO', name: 'Phoenix Suns', conference: 'W', recordW:'19', recordL:'63', threeW: '5', threeL: '5'}, 
 ]
 
 

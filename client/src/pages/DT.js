@@ -215,7 +215,7 @@ d3.csv(Scatter).then (function(data) {
       .data(allgroups)
       .enter()
       .append("circle")
-        .attr("cx", 900)
+        .attr("cx", 700)
         .attr("cy", function(d,i){ return 10 + i*(size+5)}) // 100 is where the first dot appears. 25 is the distance between dots
         .attr("r", 7)
         .style("fill", function(d){ return color(d)})
@@ -229,7 +229,7 @@ d3.csv(Scatter).then (function(data) {
       .data(allgroups)
       .enter()
       .append("text")
-        .attr("x", 900 + size*.8)
+        .attr("x", 700 + size*.8)
         .attr("y", function(d,i){ return i * (size + 5) + (size/2)}) // 100 is where the first dot appears. 25 is the distance between dots
         .style("fill", function(d){ return color(d)})
         .text(function(d){ return d})
@@ -246,7 +246,7 @@ componentDidMount(){
 
 render(){
   return(
-    <div id="BC"></div>
+    <div className="windowBox" id="BC"></div>
   )
 }
 
