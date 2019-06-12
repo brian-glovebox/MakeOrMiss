@@ -13,6 +13,9 @@ import Navbar from "./components/Navbar";
 import momLogo from "./assets/momLogo.png"
 import MenuContainer from "./components/MC"
 import { Col, Row } from 'reactstrap';
+import ReactLogo from '../src/assets/reactlogo.png'
+import D3 from '../src/assets/d3.png'
+import NBA from '../src/assets/NBAlogo.png'
 // import { TopBar } from '../src/components/TopBar';
 // import { Main } from '../src/components/Main';
 // import nba from 'nba';
@@ -25,6 +28,10 @@ function App() {
           <Col md="2"><div className="appCol">
 
 <img id="momLogo" src={momLogo} />
+
+<img id="react" src={ReactLogo} />
+    <img id="d3" src={D3} />
+    <img id="nba" src={NBA} />
 
   </div></Col>
           <Col md="8"> <div className="appColMain">   <Switch>
