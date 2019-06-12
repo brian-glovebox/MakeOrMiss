@@ -315,7 +315,7 @@ componentDidMount(){
 
 render(){
   return(
-    <div id="BC"></div>
+    <div className="windowBox" id="BC"></div>
   )
 }
 
