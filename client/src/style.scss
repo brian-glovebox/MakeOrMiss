@@ -13,15 +13,13 @@ html,body{
 
 body {
   position: relative;
-  
+
 }
 
 .windowBox {
   min-height: 600px;
   max-height: 600px;
   max-width: 100vh;
-  margin: 0 300px;
-  
 }
 
 /* NAV BAR */
@@ -219,3 +217,168 @@ text {
   fill: none;
 }
 
+nav.navbar, .navbar-default {
+  background-color: #2892D7 !important;
+}
+
+.navbar-default {
+  background-image: none;
+  border: none;
+  border-radius: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+  color: white;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  color: white;
+  background-color: transparent;
+}
+
+// MENU
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:300');
+$bg: #34495e;
+$primarycolor: orange;
+$white: #ecf0f1;
+$font: 'Rubik';
+
+html, body {
+  background: radial-gradient($bg 0, darken($bg, 15%) 100%);
+  min-height: 100vh;
+  font-family: $font, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.description {
+  color: $white;
+  font-size: 22px;
+  line-height: 1.4;
+  padding: 50px 0;
+  text-align: center;
+  width: 100%;
+  
+  a,
+  a:hover,
+  a:active,
+  a:focus,
+  a:visited {
+    color: darken($white, 15%);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    border-bottom: 1px solid lighten($white, 15%);
+  }
+}
+
+.menu-container {
+  box-shadow: 0 0px 50px hsla(0, 0, 0, 0.7);
+  // position: fixed;
+  transform: translate(0);
+  margin: 50px auto;
+  width: 180px;
+}
+
+.menu-item,
+.menu-item--active {
+  height: 60px;
+  width: 100%;
+}
+
+.menu-item {
+  align-items: center;
+  color: $white;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  letter-spacing: 4px;
+  text-align: center;
+  
+  &.active {
+    box-shadow: 0 2px 3px hsla(0, 0, 0, 0.7);
+  }
+ 
+  &:nth-of-type(1) {
+    background: $primarycolor;
+  }
+  &:nth-of-type(2) {
+    background: darken($primarycolor, 5%);
+  }
+  &:nth-of-type(3) {
+    background: darken($primarycolor, 10%);
+  }
+  &:nth-of-type(4) {
+    background: darken($primarycolor, 15%);
+  }
+  &:nth-of-type(5) {
+    background: darken($primarycolor, 20%);
+  }
+}
+
+.menu-item--active {
+  background: $primarycolor;
+  border-radius: 2px !important;
+  box-shadow: 0 0px 50px hsla(0, 0, 0, 0.5);
+  left: 50%;
+  padding: 0 7px;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: all 300ms;
+  z-index: -1;
+}
+
+#appWrapper {
+  position: relative;
+}
+.appColMain{
+  position: absolute;
+width: 80vw; 
+float: left
+}
+
+.appCol{
+  position: fixed;
+  width: 10vw;
+  float: left; 
+
+
+}
+#momLogo{
+  float: left;
+  position: fixed;
+}
+
+#appMenu {
+  position: fixed;
+  float:right; 
+}
+
+#wins{
+  margin-top: -80px;
+  margin-left: -30px; 
+}

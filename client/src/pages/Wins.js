@@ -276,13 +276,7 @@ function mouseout(d)
 
   render() {
     return (
-      <div className="windowBox" id="wins">
-        <h1>Line Graph Page</h1>
-        <div className="dvContainer">
-
-        </div>
-
-      </div>
+      <div className="windowBox" id="wins"></div>
     )
   }
 
