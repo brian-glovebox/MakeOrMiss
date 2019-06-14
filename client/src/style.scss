@@ -418,9 +418,10 @@ float: left
   height: 50%;
   margin-left: 30px;
   margin-top: 50px;
-  box-shadow:10px 10px 10px black;  
-
+  box-shadow:10px 10px 10px 10px black;  
 }
+
+
 
 li {
   margin: 5px 0;  
@@ -430,8 +431,8 @@ li {
   float: left; 
   color: white; 
   p {
-    margin: 12pt 0pt 12pt 30pt; 
-    padding: 12pt 0; 
+    margin: 14pt 0pt 14pt 30pt; 
+    padding: 14pt 0; 
   }
 }
 
@@ -482,6 +483,7 @@ li {
 }
 
 #ptag{
+  margin-top: 50px;
   margin-right: 50px;
   text-align: center;
   font-size: 50px;
@@ -493,6 +495,15 @@ li {
   font-size: 25px;
 }
 
-h4{
-  text-align: center;
+// h4{
+//   text-align: center;
+// }
+
+// h3{
+//   text-align: center;
+//   padding-top: 50px;
+// }
+
+#bubbleteam{
+  padding-right:30px;
 }
