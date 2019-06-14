@@ -131,7 +131,7 @@ class Team extends React.Component {
     return (<>
       <div id="team"></div>
       <div id= "ttb" className="textBox">
-      <h4>Team Bubble Chart</h4>
+      <h4 id="bubbleteam">Team Bubble Chart</h4>
 <h7>Weighted bubble chart displaying the team Field Goal Percentage based on last shot taken in a game decided by three points or less. </h7>     
  </div>
 

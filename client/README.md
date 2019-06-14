@@ -1,3 +1,26 @@
+## Make Or Miss 
+
+### "It's a Make or Miss League"
+
+
+Make or Miss is data visualization project based on the 2018-2019 NBA Season. For this project we have chosen to take a look at games that were decided by three points our less and therefore could have changed the outcome based on the final shot. Explore how standings could have differed, potential wins for that season, the correlation between time left and distance of shot, team efficiency during these parameters, and all the what ifs that come with it.
+
+
+Web Application built in React
+
+
+Data was sourced from ESPN Advanced Stats and Basketball Reference.
+
+
+Visuals were made with D3.js.
+
+
+Dedicated to Rachel Nichols and ESPN’s The Jump
+
+
+Created by Brian Ford and Leonardo Silva - University of Denver Full Stack Web Development Graduates
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
