@@ -14,8 +14,10 @@ class Team extends React.Component {
     // append the svg object to the body of the page
     var svg = d3.select("#team")
       .append("svg")
-        .attr("width", width)
-        .attr("height", height)
+        // .attr("width", width)
+        // .attr("height", height)
+        .attr("preserveAspectRatio", "xMinYMin meet")
+.attr("viewBox", "0 0 2000 2000")
     
     // Read data
   

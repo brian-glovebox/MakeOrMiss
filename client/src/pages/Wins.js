@@ -165,6 +165,7 @@ function projectX(x)
 var svg = d3.select("#wins").append("svg")
     .attr("width", diameter)
     .attr("height", diameter)
+    
   .append("g")
     .attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
     
