@@ -1,7 +1,6 @@
 import React from "react";
 import * as d3 from 'd3';
 import Scatter from '../assets/Scatter.csv'
-import Scatter2 from '../assets/Scatter2.csv'
 
 class DT extends React.Component {
 
@@ -14,8 +13,10 @@ var margin = {top: 80, right: 300, bottom: 120, left: 60},
 // append the svg object to the body of the page
 var svg = d3.select("#BC")
   .append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
+    // .attr("width", width + margin.left + margin.right)
+    // .attr("height", height + margin.top + margin.bottom)
+    .attr("preserveAspectRatio", "xMinYMin meet")
+.attr("viewBox", "0 0 1000 840")
   .append("g")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
