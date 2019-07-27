@@ -13,6 +13,9 @@
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
   },
+  "engines": {
+    "node": "10.15.3"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -28,6 +31,7 @@
     "if-env": "^1.0.4",
     "moment": "^2.24.0",
     "mongoose": "^5.3.16",
+    "node": "^12.5.0",
     "react-burger-menu": "^2.6.10",
     "react-scroll": "^1.7.11",
     "reactstrap": "^8.0.0"

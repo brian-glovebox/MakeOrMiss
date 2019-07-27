@@ -17,8 +17,8 @@ class Team extends React.Component {
         // .attr("width", width)
         // .attr("height", height)
         .attr("preserveAspectRatio", "xMinYMin meet")
-.attr("viewBox", "0 0 2000 2000")
-    
+        .attr("viewBox", "100 50 1750 1400")
+        .attr("class", "svg-content1")
     // Read data
   
     d3.csv(Clutch).then (function(data) {
@@ -68,6 +68,24 @@ class Team extends React.Component {
         Tooltip
           .style("opacity", 0)
       }
+
+        // ---------------------------//
+  //       HIGHLIGHT GROUP      //
+  // ---------------------------//
+
+  // What to do when one group is hovered
+  var highlight = function(d) {
+    // reduce opacity of all groups
+    d3.selectAll("circle").style("opacity", .5)
+    // expect the one that is hovered
+    d3.selectAll(d).style("opacity", 1)
+  }
+
+  // And when it is not hovered anymore
+  var noHighlight = function(d) {
+    d3.selectAll("circle").style("opacity", 1)
+  }
+
     
       // Initialize the circle: all located at the center of the svg area
       var node = svg.append("g")
@@ -83,13 +101,15 @@ class Team extends React.Component {
           .style("fill-opacity", 0.8)
           .attr("stroke", function(d){ return line(d.team)})
           .style("stroke-width", 3)
+        //   .on("mouseover", highlight)
+        // .on("mouseleave", noHighlight)
           .on("mouseover", mouseover) // What to do when hovered
           .on("mousemove", mousemove)
           .on("mouseleave", mouseleave)
           .call(d3.drag() // call specific function when circle is dragged
-               .on("start", dragstarted)
-               .on("drag", dragged)
-               .on("end", dragended));
+          .on("start", dragstarted)
+          .on("drag", dragged)
+          .on("end", dragended));
     
       // Features of the forces applied to the nodes:
       var simulation = d3.forceSimulation()

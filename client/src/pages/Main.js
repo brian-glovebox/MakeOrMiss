@@ -11,20 +11,18 @@ class Main extends Component {
   // Add code here to get all books from the database and save them to this.state.books
 
   render() {
-    return (
-      <>
+    return (<>
       <div className="windowBox" id="main">
     <Carousel />
-
   </div>
-    
 
     <p id="ptag">"It's a Make or Miss League"</p>
     <p id="ptag1">A Data Visualization Project</p>
-    </>
-      
-      )
-    }
+    
+
+      </>
+    )
   }
+}
 
 export default Main;

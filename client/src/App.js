@@ -20,7 +20,7 @@ function App() {
 <Row>
           <Col md="2"><div className="appCol">
 
-<img id="momLogo" src={momLogo} />
+<a href="https://salty-coast-38970.herokuapp.com/"><img id="momLogo" src={momLogo} /></a>
 
 <img id="react" src={ReactLogo} />
     <img id="d3" src={D3} />
