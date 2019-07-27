@@ -97,9 +97,9 @@ var color = d3.scaleLinear()
 //      .domain(["MIL", "TOR", "PHI", "BOS", "IND", "BRK", "ORL", "DET", "CHO", "MIA", "WAS", "ATL", "CHI", "CLE", "NYK"])
 //      .range([ "#00471B", "#CE1141","#006BB6", "#007A33", "#FDBB30","#000000","#0077C0","#C8102E","#1D1160","#98002E","#E31837","#FFCD00","#BC032B","#6F263D", "#F58426"])
     
-var diameter = 1120;
+var diameter = 1000;
 var rect_width = 40;
-var rect_height = 13;
+var rect_height = 11;
 
 var link_width = "1px"; 
 
@@ -165,6 +165,7 @@ function projectX(x)
 var svg = d3.select("#wins").append("svg")
     .attr("width", diameter)
     .attr("height", diameter)
+    .attr("class", "winsize")
     
   .append("g")
     .attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");

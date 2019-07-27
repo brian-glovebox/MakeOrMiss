@@ -16,7 +16,8 @@ var svg = d3.select("#BC")
     // .attr("width", width + margin.left + margin.right)
     // .attr("height", height + margin.top + margin.bottom)
     .attr("preserveAspectRatio", "xMinYMin meet")
-.attr("viewBox", "0 0 1000 840")
+    .attr("viewBox", "0 0 1000 840")
+    .attr("class", "svg-content")
   .append("g")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
@@ -358,7 +359,7 @@ componentDidMount(){
 render(){
   return(
     <div className="windowBox">
-    <div id="BC"></div> 
+    <div id="BC" className="svg-container"></div> 
     <div id= "dttb" className="textBox">
       <h4>Distance / Time</h4>
 <h7>Plots out every shot taken in the last 24 seconds of games decided by three points or less. The X axis represents time left in the last possession. The Y axis represents distance from the basket. Circle size indicates shot outcome. </h7>      </div>
