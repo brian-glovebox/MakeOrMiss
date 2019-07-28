@@ -1,11 +1,12 @@
 /* BODY */
 
-html,body{
-  height:100vh;
-  margin:0;
-  padding:0;
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
   font-family: 'Acme', sans-serif;
-  font-size: 2vh; 
+  font-size: 2vh;
   background-color: #323639;
   color: white;
 
@@ -92,81 +93,82 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 // RESHUFFLE
 
-  #shuffle {
+#shuffle {
+  position: relative;
+  width: 90%;
+  max-width: 80px;
+  margin: auto;
+
+  header {
     position: relative;
-    width: 90%;
-    max-width: 80px;
-    margin: auto;
-  
-    header {
-      position: relative;
-      padding: 16px;
-      height: 25px;
-      margin: 4px 0;
-  
-  
+    padding: 16px;
+    height: 25px;
+    margin: 4px 0;
+
+
+  }
+
+  .list-item {
+    position: relative;
+    margin: 0 6px 12px 6px;
+    height: 2vh;
+    padding: 16px;
+    list-style-type: none;
+
+    &:hover button {
+      display: block;
     }
-    .list-item {
-      position: relative;
-      margin: 0 6px 12px 6px;
-      height: 2vh; 
-      padding: 16px;
-      list-style-type: none;
-  
-      &:hover button {
-        display: block;
-      }
-  
-      &.list {
-        display: block;
-  
-        button {
-          top: 0;
-          right: 10px;
-          bottom: 0;
-          margin: auto;
-          width: 52px;
-          height: 52px;
-          border: 0;
-          border-radius: 4px;
-          color: white;
-          font-size: 80px;
-        }
-      }
-  
-      &.grid {
-        display: inline-block;
-  
-        button {
-          top: 0;
-          right: 0;
-          font-size: 14px;
-          background: transparent;
-          border: 0;
-        }
-      }
-  
+
+    &.list {
+      display: block;
+
       button {
-        display: none;
-        position: absolute;
+        top: 0;
+        right: 10px;
+        bottom: 0;
+        margin: auto;
+        width: 52px;
+        height: 52px;
+        border: 0;
+        border-radius: 4px;
+        color: white;
+        font-size: 80px;
       }
     }
-  }
 
-  #standingsHeader {
-    margin: 20px 0 0 200px;
+    &.grid {
+      display: inline-block;
 
+      button {
+        top: 0;
+        right: 0;
+        font-size: 14px;
+        background: transparent;
+        border: 0;
+      }
+    }
+
+    button {
+      display: none;
+      position: absolute;
+    }
   }
+}
+
+#standingsHeader {
+  margin: 20px 0 0 200px;
+
+}
 
 .lgBox {
-  position: relative; 
+  position: relative;
   float: left;
 }
 
 .dvBox {
   width: 30vw;
-  position: relative; 
-  float: left; 
+  position: relative;
+  float: left;
 }
 
 .dvContainer {
@@ -178,12 +180,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
 // ConceptMap
 
 svg {
-  font: 12px sans-serif; 
+  font: 12px sans-serif;
 }
 
 text {
   pointer-events: none;
-  color:white;
+  color: white;
 }
 
 .inner_node rect {
@@ -194,7 +196,7 @@ text {
 .inner_node rect.highlight {
   stroke: #315B7E;
   stroke-width: 2px;
-  color:white;
+  color: white;
 }
 
 .outer_node circle {
@@ -202,21 +204,21 @@ text {
   stroke: black;
   stroke-width: 1.5px;
   pointer-events: all;
-  color: white; 
+  color: white;
 }
 
-.outer_node circle.highlight
-{
+.outer_node circle.highlight {
   stroke: #315B7E;
   stroke-width: 2px;
-  color: white; 
+  color: white;
 }
 
 .link {
   fill: none;
 }
 
-nav.navbar, .navbar-default {
+nav.navbar,
+.navbar-default {
   background-color: #2892D7 !important;
 }
 
@@ -226,7 +228,7 @@ nav.navbar, .navbar-default {
   border-radius: 0;
 }
 
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav>li>a {
   color: white;
 }
 
@@ -242,16 +244,19 @@ nav.navbar, .navbar-default {
   background-color: white;
 }
 
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
   background-color: transparent;
 }
 
-.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
   color: white;
   background-color: transparent;
 }
 
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
   color: white;
   background-color: transparent;
 }
@@ -264,7 +269,8 @@ $primarycolor: orange;
 $white: #ecf0f1;
 $font: 'Rubik';
 
-html, body {
+html,
+body {
   background: radial-gradient($bg 0, darken($bg, 15%) 100%);
   min-height: 100vh;
   font-family: $font, sans-serif;
@@ -279,7 +285,7 @@ html, body {
   padding: 50px 0;
   text-align: center;
   width: 100%;
-  
+
   a,
   a:hover,
   a:active,
@@ -288,7 +294,7 @@ html, body {
     color: darken($white, 15%);
     text-decoration: none;
   }
-  
+
   a:hover {
     border-bottom: 1px solid lighten($white, 15%);
   }
@@ -317,31 +323,36 @@ html, body {
   justify-content: center;
   letter-spacing: 4px;
   text-align: center;
-  
+
   &.active {
     box-shadow: 0 2px 3px hsla(0, 0, 0, 0.7);
   }
 
   &:hover {
-    color:black; 
+    color: black;
     text-decoration: none;
   }
- 
+
   &:nth-of-type(1) {
     background: $primarycolor;
   }
+
   &:nth-of-type(2) {
     background: darken($primarycolor, 5%);
   }
+
   &:nth-of-type(3) {
     background: darken($primarycolor, 10%);
   }
+
   &:nth-of-type(4) {
     background: darken($primarycolor, 15%);
   }
+
   &:nth-of-type(5) {
     background: darken($primarycolor, 20%);
   }
+
   &:nth-of-type(6) {
     background: darken($primarycolor, 25%);
   }
@@ -362,32 +373,34 @@ html, body {
 #appWrapper {
   position: relative;
 }
-.appColMain{
+
+.appColMain {
   position: absolute;
-width: 80vw; 
-float: left
+  width: 80vw;
+  float: left
 }
 
-.appCol{
+.appCol {
   position: fixed;
   width: 10vw;
-  float: left; 
+  float: left;
 
 
 }
-#momLogo{
+
+#momLogo {
   float: left;
   position: fixed;
 }
 
 #appMenu {
   position: fixed;
-  float:right; 
+  float: right;
 }
 
-#wins{
+#wins {
   margin-top: -80px;
-  margin-left: -30px; 
+  margin-left: -30px;
 }
 
 // #option{
@@ -397,36 +410,37 @@ float: left
 
 // teams 
 
-#team{
+#team {
   position: relative;
-  margin-left: -500px; 
-  margin-top: -530px; 
+  margin-left: -500px;
+  margin-top: -530px;
 }
 
 #about {
   margin-top: 50px
 }
 
-#main{
+#main {
   max-width: 75%;
   height: 50%;
   margin-left: 30px;
   margin-top: 50px;
-  box-shadow:10px 10px 10px 10px black;  
+  box-shadow: 10px 10px 10px 10px black;
 }
 
 
 
 li {
-  margin: 5px 0;  
+  margin: 5px 0;
 }
 
 #standingsLabels {
-  float: left; 
-  color: white; 
+  float: left;
+  color: white;
+
   p {
-    margin: 14pt 0pt 14pt 30pt; 
-    padding: 14pt 0; 
+    margin: 14pt 0pt 14pt 30pt;
+    padding: 14pt 0;
   }
 }
 
@@ -435,8 +449,8 @@ li {
 }
 
 .textBox {
-  
-  margin-bottom: 40px; 
+
+  margin-bottom: 40px;
 }
 
 #stb {
@@ -447,59 +461,53 @@ li {
   margin-top: -100px;
 }
 
-#ttb{
+#ttb {
   margin-top: 0px
 }
 
-#react{
-  height:50px;
-  width:50px;
+#react {
+  height: 50px;
+  width: 50px;
   margin-top: 770px;
   padding: 5px;
   margin-right: 10px;
 }
 
-#d3{
-  height:50px;
-  width:50px;
+#d3 {
+  height: 50px;
+  width: 50px;
   margin-top: 770px;
   padding: 5px;
   margin-right: 5px;
 
 }
 
-#nba{
-  height:50px;
-  width:50px;
+#nba {
+  height: 50px;
+  width: 50px;
   margin-top: 770px;
   padding: 5px;
 
 }
 
-#ptag{
+#ptag {
+  font-family: "Bungee", sans-serif;
   margin-top: 50px;
   margin-right: 280px;
   text-align: center;
   font-size: 50px;
 }
 
-#ptag1{
+#ptag1 {
+  font-family: "Rubik", sans-serif;
   margin-right: 280px;
   text-align: center;
   font-size: 25px;
 }
 
-// h4{
-//   text-align: center;
-// }
 
-// h3{
-//   text-align: center;
-//   padding-top: 50px;
-// }
-
-#bubbleteam{
-  padding-right:30px;
+#bubbleteam {
+  padding-right: 30px;
 }
 
 .svg-container {
@@ -510,6 +518,7 @@ li {
   vertical-align: top;
   overflow: hidden;
 }
+
 .svg-content {
   display: inline-block;
   position: absolute;
@@ -537,11 +546,12 @@ li {
   -o-transition: 0.3s;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  background: #B47301;
+  background: #E69502;
   border: none;
 }
 
 .picross-btn:hover {
+  color: black;
   -moz-transform: translate(4px, 4px);
   -ms-transform: translate(4px, 4px);
   -webkit-transform: translate(4px, 4px);
@@ -549,50 +559,67 @@ li {
   -moz-box-shadow: 0 0 0 #1D2832;
   -webkit-box-shadow: 0 0 0 #1D2832;
   box-shadow: 0 0 0 #1D2832;
+  background: #B47301;
 }
+
 .picross-btn:active {
   -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
 }
 
+#ad {
+  margin: 60px 1120px 0;
+}
 
+a {
+  color: #FFA500;
+}
 
+a:hover {
+color: #006FBB;
+}
 
+h7 {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+}
 
-
+h4 {
+  font-family: "Bungee", sans-serif;
+}
 @media only screen and (max-width: 1280px) {
-  #ptag{
+  #ptag {
     margin-right: 200px;
   }
- 
-  #ptag1{
-    margin-right: 200px;
-  }
- 
-  #react{
-   margin-top: 700px;
-   // margin-right: 10px;
-  }
-  
-  #d3{
-  
-   margin-top: 700px;
- 
- }
- 
- #nba{
-   margin-top: -69px;
-   margin-left: 105px;
- 
- }
- 
- #standingsLabels p {
-   margin: 12pt 0pt 3pt 30pt;
-   padding: 14pt 0;
- }
 
- #stb{
-   margin-top: 1200px;
- }
- }
+  #ptag1 {
+    margin-right: 200px;
+  }
+
+  #react {
+    margin-top: 700px;
+    // margin-right: 10px;
+  }
+
+  #d3 {
+
+    margin-top: 700px;
+
+  }
+
+  #nba {
+    margin-top: -69px;
+    margin-left: 105px;
+
+  }
+
+  #standingsLabels p {
+    margin: 12pt 0pt 3pt 30pt;
+    padding: 14pt 0;
+  }
+
+  #stb {
+    margin-top: 1200px;
+  }
+}
