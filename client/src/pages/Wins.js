@@ -250,6 +250,7 @@ inode.append("text")
     .attr("transform", "translate(" + rect_width/2 + ", " + rect_height * .75 + ")")
     .text(function(d) { return d.name; });
 
+
 // need to specify x/y/etc
 
 d3.select(window.self.frameElement).style("height", diameter - 150 + "px");
@@ -263,6 +264,7 @@ function mouseover(d)
     {
         d3.select('#' + d.related_nodes[i]).classed('highlight', true);
         d3.select('#' + d.related_nodes[i] + '-txt').attr("font-weight", 'bold');
+
     }
     
     for (var i = 0; i < d.related_links.length; i++)

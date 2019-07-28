@@ -1,12 +1,12 @@
 import React, { Component } from "react";
+import ad from '../assets/presented.png'
+
 
 class About extends Component {
   // Initialize this.state.books as an empty array
   state = {
 
   };
-
-  // Add code here to get all books from the database and save them to this.state.books
 
   render() {
     return (
@@ -35,12 +35,10 @@ Dedicated to Rachel Nichols and ESPN’s The Jump
 <br/>
 <br/>
 <br/>
-Sponsored by: No one
-<br/>
-<br/>
-<br/>
-Created by <a href="http://www.b-ford.dev">Brian Ford</a> and Leonardo Silva - University of Denver Full Stack Web Development Graduates
+Created by <a href="http://www.b-ford.dev">Brian Ford</a> and <a href="https://www.linkedin.com/in/leonardosilva88/">Leonardo Silva</a> - University of Denver Full Stack Web Development Graduates
 </h5>
+
+<img id="ad" src={ad} />
 
   </div>
       

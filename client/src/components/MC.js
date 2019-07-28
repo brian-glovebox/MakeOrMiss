@@ -16,8 +16,8 @@ class MenuContainer extends React.Component {
           { text: 'Home', add:'/' },
           { text: 'Standings', add:'/standings' },
           { text: 'Wins', add: '/wins' },
+          { text: 'Team FG%', add:'/team'},
           { text: 'Distance/Time', add: '/dt' },
-          { text: 'Bubbles', add:'/team'},
           { text: 'About', add: '/about'}
         ],
       }
