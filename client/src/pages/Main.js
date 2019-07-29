@@ -18,8 +18,7 @@ class Main extends Component {
 
     <p id="ptag">"It's a Make or Miss League"</p>
     <p id="ptag1">A Data Visualization Project</p>
-    
-
+  
       </>
     )
   }

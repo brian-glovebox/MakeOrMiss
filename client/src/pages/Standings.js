@@ -226,25 +226,25 @@ class Standings extends Component {
       <div className={this.state.view}>
         <header id="standingsHeader">
           <div className="abs-right">
-            <Toggle className="toggle" className="picross-btn" id="ascdec"
+            <Toggle className="toggle" className="picross-btn"
               clickHandler={this.toggleSort}
-              text={this.state.order === 'asc' ? 'ASCENDING' : 'DESCENDING'}
+              text={this.state.order === 'asc' ? 'Ascending' : 'Descending'}
               icon={this.state.order === 'asc' ? 'angle-up' : 'angle-down'}
               active={this.state.sortingMethod === 'chronological'}
             />
-            <Toggle className="toggle" className="picross-btn" id="shuffle"
+            <Toggle className="toggle" className="picross-btn"
               clickHandler={this.sortShuffle}
-              text="SHUFFLE" icon="random"
+              text="Shuffle" icon="random"
               active={this.state.sortingMethod === 'shuffle'}
             />
-            <Toggle className="toggle" className="picross-btn" id="500"
+            <Toggle className="toggle" className="picross-btn"
               clickHandler={this.sortFiveHundred}
               text=".500" icon="refresh"
               active={this.state.sortingMethod === 'shuffle'}
             />
-            <Toggle className="toggle" className="picross-btn" id="invert"
+            <Toggle className="toggle" className="picross-btn"
               clickHandler={this.sortInvert}
-              text="INVERT" icon="refresh"
+              text="Invert" icon="refresh"
               active={this.state.sortingMethod === 'shuffle'}
             />
           </div>
@@ -265,21 +265,21 @@ class Standings extends Component {
           </FlipMove>
         </div>
         <div id="standingsLabels">
-        <p>1st</p>
-        <p>2nd</p>
-        <p>3rd</p>
-        <p>4th</p>
-        <p>5th</p>
-        <p>6th</p>
-        <p>7th</p>
-        <p>8th</p>
-        <p className="altColor">9th</p>
-        <p className="altColor">10th</p>
-        <p className="altColor">11th</p>
-        <p className="altColor">12th</p>
-        <p className="altColor">13th</p>
-        <p className="altColor">14th</p>
-        <p className="altColor">15th</p>
+        <p>1ST</p>
+        <p>2ND</p>
+        <p>3RD</p>
+        <p>4TH</p>
+        <p>5TH</p>
+        <p>6TH</p>
+        <p>7TH</p>
+        <p>8TH</p>
+        <p className="altColor">9TH</p>
+        <p className="altColor">10TH</p>
+        <p className="altColor">11TH</p>
+        <p className="altColor">12TH</p>
+        <p className="altColor">13TH</p>
+        <p className="altColor">14TH</p>
+        <p className="altColor">15TH</p>
 
         </div>
         <div className= "dvBox">
@@ -297,6 +297,7 @@ class Standings extends Component {
         
       </div>
       <div id= "stb" className="textBox">
+      <br></br>
       <h4>Standings</h4>
       <h7>Re-imagine the standings based on each teams’ record in games decided by 3 points or less and how adjusting the results from those games could affect the end of the season placement.</h7>
       </div>

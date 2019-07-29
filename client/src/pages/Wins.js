@@ -227,6 +227,7 @@ onode.append("text")
     .attr("transform", function(d) { return d.x < 180 ? "translate(8)" : "rotate(180)translate(-8)"; })
     .text(function(d) { return d.name; })
     .style("font-size", 18)
+    .attr("stroke", "#909090")
   
 // inner nodes
   
@@ -248,7 +249,8 @@ inode.append("text")
 	.attr('id', function(d) { return d.id + '-txt'; })
     .attr('text-anchor', 'middle')
     .attr("transform", "translate(" + rect_width/2 + ", " + rect_height * .75 + ")")
-    .text(function(d) { return d.name; });
+    .text(function(d) { return d.name; })
+
 
 
 // need to specify x/y/etc
