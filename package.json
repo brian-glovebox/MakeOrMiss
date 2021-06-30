@@ -6,7 +6,7 @@
   "proxy": "http://localhost:3001/",
   "dependencies": {
     "antd": "^3.19.1",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.3.1",
     "d3": "^5.9.2",
     "d3-hexbin": "^0.2.2",
