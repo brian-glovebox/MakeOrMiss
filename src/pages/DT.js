@@ -96,16 +96,6 @@ d3.csv(Scatter).then (function(data) {
   
   // -2- Create 3 functions to show / update (when mouse move but stay on same circle) / hide the tooltip
   var showTooltip = function(d) {
-    
-    // var select = function(d){
-    //   // reduce opacity of all groups
-    //   d3.selectAll(".bubbles")
-    //   .mouseover("opacity", 1)
-    //   // expect the one that is hovered
-    //   d3.selectAll("."+d).style("opacity", .7)
-    // }
-    // select();
-    
     tooltip
     .transition()
     .duration(2000)
@@ -309,46 +299,6 @@ d3.csv(Scatter).then (function(data) {
         .style("alignment-baseline", "middle")
         .on("mouseover", highlight)
         .on("mouseleave", noHighlight)
-
-        // function updateData() {
-
-        //   // Get the data again
-        //   d3.csv("Scatter2").then (function(error, data) {
-        //       data.forEach(function(d) {
-        //           d.timer = +d.timer;
-        //           d.shotdistance = +d.shotdistance;
-        //           d.makeormiss = +d.makeormiss;
-        //       });
-      
-        //       // Scale the range of the data again 
-        //       x.domain("cx", function (d) { return x(d.timer); } )
-        //       y.domain("cy", function (d) { return y(d.shotdistance); } )
-        //       z.domain ("r", function (d) { return z(d.makeormiss); } )
-      
-        //   // Select the section we want to apply our changes to
-        //   var svg = d3.select("#BC").transition();
-      
-        //   // Make the changes
-        //       svg.select(".bubbles")   // change the line
-        //           .duration(1500)
-        //           .attr("r", function (d) { return z(d.makeormiss); } )
-        //       svg.select("x") // change the x axis
-        //           .duration(1500)
-        //           .attr("cx", function (d) { return x(d.timer); } )
-        //           .call(d3.axisBottom(x).ticks(5));
-        //           svg.select("y") // change the y axis
-        //           .duration(1500)
-        //           .attr("cy", function (d) { return y(d.shotdistance); } )
-        //           .call(d3.axisLeft(y));
-
-        //           svg.select(".bubble")   // change the line
-        //           .duration(1500)
-        //           .attr("cx", function (d) { return x(d.timer); } )
-        //           .attr("cy", function (d) { return y(d.shotdistance); } )
-        //           .attr("r", function (d) { return z(d.makeormiss); } )
-      
-        //   });
-      // }
   })
 }
 

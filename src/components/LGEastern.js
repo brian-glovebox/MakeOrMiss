@@ -112,3 +112,5 @@ class LGEastern extends React.Component {
     }
 
 }
+
+export default LGEastern
